@@ -8,6 +8,17 @@
 
 // Example
 
+Input:
+s = "ADOBECODEBANC"
+t = "ABC"
+
+Output:
+"BANC"
+
+
+Time: O(n)
+Space: O(k)
+
 
 
 
