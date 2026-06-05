@@ -105,3 +105,86 @@ Output:
 
 "wertf"
 
+
+Time: O(V + E)
+Space: O(V + E)
+
+
+function alienOrder(words) {
+    const graph = new Map();
+    const indegree = new Map();
+
+    for (const word of words) {
+        for (const char of word) {
+            if (!graph.has(char)) {
+                graph.set(char, []);
+            }
+
+            if (!indegree.has(char)) {
+                indegree.set(char, 0);
+            }
+        }
+    }
+
+    for (let i = 0; i < words.length - 1; i++) {
+        const w1 = words[i];
+        const w2 = words[i + 1];
+
+        if (
+            w1.length > w2.length &&
+            w1.startsWith(w2)
+        ) {
+            return "";
+        }
+
+        const minLen = Math.min(
+            w1.length,
+            w2.length
+        );
+
+        for (let j = 0; j < minLen; j++) {
+            if (w1[j] !== w2[j]) {
+                graph.get(w1[j]).push(w2[j]);
+                indegree.set(
+                    w2[j],
+                    indegree.get(w2[j]) + 1
+                );
+                break;
+            }
+        }
+    }
+
+    const queue = [];
+
+    for (const [char, degree] of indegree) {
+        if (degree === 0) {
+            queue.push(char);
+        }
+    }
+
+    let result = "";
+
+    while (queue.length) {
+        const char = queue.shift();
+
+        result += char;
+
+        for (const neighbor of graph.get(char)) {
+            indegree.set(
+                neighbor,
+                indegree.get(neighbor) - 1
+            );
+
+            if (indegree.get(neighbor) === 0) {
+                queue.push(neighbor);
+            }
+        }
+    }
+
+    return result.length === indegree.size
+        ? result
+        : "";
+}
+
+
+
