@@ -78,7 +78,30 @@ function minWindow(s, t) {
 }
 
 
+// 2 problem -  Alien Dictionary (Hard)
+// Problem
+
+// There is a new alien language.
+
+// You are given a sorted dictionary of words according to the alien language.
+
+// Return the order of characters.
+
+// If no valid order exists, return "".
 
 
 
+Input:
+
+[
+  "wrt",
+  "wrf",
+  "er",
+  "ett",
+  "rftt"
+]
+
+Output:
+
+"wertf"
 
