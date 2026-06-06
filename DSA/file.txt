@@ -1,0 +1,18 @@
+Difficulty Progression
+
+If you're targeting FAANG, a strong progression is:
+
+Two Sum
+Longest Substring Without Repeating Characters
+Minimum Window Substring
+Merge Intervals
+LRU Cache
+Number of Islands
+Clone Graph
+Alien Dictionary
+Word Ladder
+Serialize/Deserialize Binary Tree
+Trapping Rain Water
+Median of Two Sorted Arrays
+
+Mastering problems 3–12 puts you in the range of many mid-to-senior software engineering interview rounds.
