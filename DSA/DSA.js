@@ -225,6 +225,17 @@ function merge(intervals) {
 
 
 
+// Time  : O(n log n)
+// Space : O(n)
+
+
+// 2: Employee Free Time
+
+// A harder interval problem frequently asked as a follow-up.
+
+// Given schedules of employees, return all common free time intervals.
+
+
 
 
 
