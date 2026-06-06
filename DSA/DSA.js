@@ -236,6 +236,19 @@ function merge(intervals) {
 // Given schedules of employees, return all common free time intervals.
 
 
+Input:
+
+[
+ [[1,2],[5,6]],
+ [[1,3]],
+ [[4,10]]
+]
+
+Output:
+
+[[3,4]]
+
+
 
 
 
