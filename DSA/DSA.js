@@ -307,4 +307,70 @@ put(key,value) → O(1)
 // Doubly Linked List
 
 
+class Node {
+    constructor(key, value) {
+        this.key = key;
+        this.value = value;
+        this.prev = null;
+        this.next = null;
+    }
+}
+
+class LRUCache {
+    constructor(capacity) {
+        this.capacity = capacity;
+        this.map = new Map();
+
+        this.head = new Node();
+        this.tail = new Node();
+
+        this.head.next = this.tail;
+        this.tail.prev = this.head;
+    }
+
+    remove(node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+
+    insert(node) {
+        node.prev = this.tail.prev;
+        node.next = this.tail;
+
+        this.tail.prev.next = node;
+        this.tail.prev = node;
+    }
+
+    get(key) {
+        if (!this.map.has(key))
+            return -1;
+
+        const node = this.map.get(key);
+
+        this.remove(node);
+        this.insert(node);
+
+        return node.value;
+    }
+
+    put(key, value) {
+        if (this.map.has(key)) {
+            this.remove(this.map.get(key));
+        }
+
+        const node = new Node(key, value);
+
+        this.insert(node);
+        this.map.set(key, node);
+
+        if (this.map.size > this.capacity) {
+            const lru = this.head.next;
+
+            this.remove(lru);
+            this.map.delete(lru.key);
+        }
+    }
+}
+
+
 
