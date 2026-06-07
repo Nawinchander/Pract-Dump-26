@@ -302,3 +302,9 @@ get(key) → O(1)
 put(key,value) → O(1)
 
 
+// HashMap
+// +
+// Doubly Linked List
+
+
+
