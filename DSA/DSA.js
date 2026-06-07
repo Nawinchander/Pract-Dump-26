@@ -403,3 +403,9 @@ remove key 2
 freq(1)=2
 freq(2)=1
 
+key → node
+
+frequency → doubly linked list
+
+minFrequency
+
