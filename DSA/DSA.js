@@ -386,3 +386,20 @@ put() = O(1)
 // If frequency ties:
 
 // Remove Least Recently Used
+
+
+
+LFUCache(2)
+
+put(1,1)
+put(2,2)
+
+get(1)
+
+put(3,3)
+
+remove key 2
+
+freq(1)=2
+freq(2)=1
+
