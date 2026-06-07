@@ -409,3 +409,96 @@ frequency → doubly linked list
 
 minFrequency
 
+
+
+class LFUCache {
+    constructor(capacity) {
+        this.capacity = capacity;
+        this.minFreq = 0;
+
+        this.keyMap = new Map();
+        this.freqMap = new Map();
+    }
+
+    get(key) {
+        if (!this.keyMap.has(key))
+            return -1;
+
+        const node = this.keyMap.get(key);
+
+        this.updateFrequency(node);
+
+        return node.value;
+    }
+
+    put(key, value) {
+        if (this.capacity === 0)
+            return;
+
+        if (this.keyMap.has(key)) {
+            const node = this.keyMap.get(key);
+
+            node.value = value;
+
+            this.updateFrequency(node);
+
+            return;
+        }
+
+        if (this.keyMap.size >= this.capacity) {
+            const leastFreqKeys =
+                this.freqMap.get(this.minFreq);
+
+            const evictKey =
+                leastFreqKeys.values().next().value;
+
+            leastFreqKeys.delete(evictKey);
+            this.keyMap.delete(evictKey);
+        }
+
+        const node = {
+            key,
+            value,
+            freq: 1
+        };
+
+        this.keyMap.set(key, node);
+
+        if (!this.freqMap.has(1)) {
+            this.freqMap.set(1, new Set());
+        }
+
+        this.freqMap.get(1).add(key);
+
+        this.minFreq = 1;
+    }
+
+    updateFrequency(node) {
+        const oldFreq = node.freq;
+
+        this.freqMap.get(oldFreq).delete(node.key);
+
+        if (
+            this.freqMap.get(oldFreq).size === 0 &&
+            oldFreq === this.minFreq
+        ) {
+            this.minFreq++;
+        }
+
+        node.freq++;
+
+        if (!this.freqMap.has(node.freq)) {
+            this.freqMap.set(
+                node.freq,
+                new Set()
+            );
+        }
+
+        this.freqMap
+            .get(node.freq)
+            .add(node.key);
+    }
+}
+
+
+
