@@ -288,7 +288,17 @@ function employeeFreeTime(schedule) {
 
 
 
+Time  : O(n log n)
+Space : O(n)
 
 
+
+// Design LRU Cache
+// LeetCode 146 (Google/Meta/Amazon Favorite)
+
+// Design a data structure supporting:
+
+get(key) → O(1)
+put(key,value) → O(1)
 
 
