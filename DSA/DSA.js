@@ -373,4 +373,16 @@ class LRUCache {
 }
 
 
+get() = O(1)
+put() = O(1)
 
+
+// 4: LFU Cache (Harder Follow-up)
+
+// This is a common follow-up after LRU.
+
+// Evict the item used least frequently.
+
+// If frequency ties:
+
+// Remove Least Recently Used
