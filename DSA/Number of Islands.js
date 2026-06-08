@@ -129,6 +129,9 @@ function maxAreaOfIsland(grid) {
     return maxArea;
 }
 
+Time: O(m × n)
+Space: O(m × n)
+
 
 
 
