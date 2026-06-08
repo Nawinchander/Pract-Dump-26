@@ -12,4 +12,20 @@
 
 // Given a 2D grid of '1' (land) and '0' (water), return the number of islands.
 
+// Example
+
+Input:
+
+[
+ ["1","1","0","0"],
+ ["1","1","0","0"],
+ ["0","0","1","0"],
+ ["0","0","0","1"]
+]
+
+Output:
+3
+
+
+
 
