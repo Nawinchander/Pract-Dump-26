@@ -570,6 +570,16 @@ function numIslands(grid) {
 }
 
 
+// Time: O(m × n)
+// Space: O(m × n)
+
+
+// Problem 2: Max Area of Island
+// LeetCode 695
+
+// Instead of counting islands, find the largest island size.
+
+
 
 
 
