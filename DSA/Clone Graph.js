@@ -62,3 +62,18 @@ This is often asked immediately after Clone Graph.
 LeetCode 138
 
 Each node contains:
+
+
+{
+  val,
+  next,
+  random
+}
+
+7 -> 13 -> 11
+
+13.random -> 7
+11.random -> 13
+
+
+
