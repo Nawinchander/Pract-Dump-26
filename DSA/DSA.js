@@ -580,6 +580,15 @@ function numIslands(grid) {
 // Instead of counting islands, find the largest island size.
 
 
+Input:
 
+[
+ [0,0,1,0],
+ [1,1,1,0],
+ [0,1,0,0]
+]
+
+Output:
+5
 
 
