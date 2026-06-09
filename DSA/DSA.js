@@ -668,10 +668,10 @@ function alienOrder(words) {
 Time: O(V + E)
 Space: O(V + E)
 
-Problem 2: Course Schedule II
-LeetCode 210
+// Problem 2: Course Schedule II
+// LeetCode 210
 
-Return the order in which courses should be taken.
+// Return the order in which courses should be taken.
 
 numCourses = 4
 
@@ -685,5 +685,57 @@ prerequisites = [
 Output:
 
 [0,1,2,3]
+
+
+function findOrder(numCourses, prerequisites) {
+    const graph = Array.from(
+        { length: numCourses },
+        () => []
+    );
+
+    const indegree = new Array(
+        numCourses
+    ).fill(0);
+
+    for (const [course, prereq] of prerequisites) {
+        graph[prereq].push(course);
+        indegree[course]++;
+    }
+
+    const queue = [];
+
+    for (let i = 0; i < numCourses; i++) {
+        if (indegree[i] === 0) {
+            queue.push(i);
+        }
+    }
+
+    const result = [];
+
+    while (queue.length) {
+        const curr = queue.shift();
+
+        result.push(curr);
+
+        for (const next of graph[curr]) {
+            indegree[next]--;
+
+            if (indegree[next] === 0) {
+                queue.push(next);
+            }
+        }
+    }
+
+    return result.length === numCourses
+        ? result
+        : [];
+}
+
+
+
+
+
+
+
 
 
