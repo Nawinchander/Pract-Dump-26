@@ -108,6 +108,89 @@ Output:
 ]
 
 
+function findLadders(
+    beginWord,
+    endWord,
+    wordList
+) {
+    const wordSet = new Set(wordList);
+
+    if (!wordSet.has(endWord))
+        return [];
+
+    const queue = [[beginWord]];
+    const result = [];
+
+    let visited = new Set();
+
+    while (
+        queue.length &&
+        result.length === 0
+    ) {
+
+        const size = queue.length;
+        const levelVisited = new Set();
+
+        for (
+            let k = 0;
+            k < size;
+            k++
+        ) {
+
+            const path =
+                queue.shift();
+
+            const word =
+                path[path.length - 1];
+
+            if (word === endWord) {
+                result.push(path);
+            }
+
+            for (
+                let i = 0;
+                i < word.length;
+                i++
+            ) {
+
+                for (
+                    let c = 97;
+                    c <= 122;
+                    c++
+                ) {
+
+                    const nextWord =
+                        word.slice(0, i) +
+                        String.fromCharCode(c) +
+                        word.slice(i + 1);
+
+                    if (
+                        wordSet.has(nextWord) &&
+                        !visited.has(nextWord)
+                    ) {
+
+                        levelVisited.add(
+                            nextWord
+                        );
+
+                        queue.push([
+                            ...path,
+                            nextWord
+                        ]);
+                    }
+                }
+            }
+        }
+
+        for (const word of levelVisited) {
+            visited.add(word);
+        }
+    }
+
+    return result;
+}
+
+
 
 
 
