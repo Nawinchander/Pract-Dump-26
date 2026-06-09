@@ -191,6 +191,9 @@ function findLadders(
 }
 
 
+Time: Exponential in worst case
+Space: O(number of paths)
+
 
 
 
