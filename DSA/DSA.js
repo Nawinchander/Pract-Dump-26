@@ -673,6 +673,17 @@ LeetCode 210
 
 Return the order in which courses should be taken.
 
+numCourses = 4
 
+prerequisites = [
+ [1,0],
+ [2,0],
+ [3,1],
+ [3,2]
+]
+
+Output:
+
+[0,1,2,3]
 
 
