@@ -92,6 +92,22 @@ M = word length
 // Return all shortest transformation sequences.
 
 
+Input:
+
+beginWord = "hit"
+endWord = "cog"
+
+wordList =
+["hot","dot","dog","lot","log","cog"]
+
+Output:
+
+[
+["hit","hot","dot","dog","cog"],
+["hit","hot","lot","log","cog"]
+]
+
+
 
 
 
