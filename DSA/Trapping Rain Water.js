@@ -73,6 +73,43 @@ Output = 10
 5 × 2 = 10
 
 
+function largestRectangleArea(heights) {
+    const stack = [];
+    let maxArea = 0;
+
+    heights.push(0);
+
+    for (let i = 0; i < heights.length; i++) {
+
+        while (
+            stack.length &&
+            heights[i] <
+                heights[stack[stack.length - 1]]
+        ) {
+
+            const h =
+                heights[stack.pop()];
+
+            const width =
+                stack.length === 0
+                    ? i
+                    : i -
+                      stack[stack.length - 1] -
+                      1;
+
+            maxArea = Math.max(
+                maxArea,
+                h * width
+            );
+        }
+
+        stack.push(i);
+    }
+
+    return maxArea;
+}
+
+
 
 
 
