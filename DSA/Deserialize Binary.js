@@ -26,6 +26,36 @@
 "1,2,null,null,3,4,null,null,5,null,null"
 
 
+class TreeNode {
+    constructor(val, left = null, right = null) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+
+function serialize(root) {
+    const result = [];
+
+    function dfs(node) {
+        if (!node) {
+            result.push("null");
+            return;
+        }
+
+        result.push(node.val);
+
+        dfs(node.left);
+        dfs(node.right);
+    }
+
+    dfs(root);
+
+    return result.join(",");
+}
+
+
 
 
 
