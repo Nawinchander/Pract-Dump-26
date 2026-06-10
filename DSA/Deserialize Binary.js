@@ -101,6 +101,47 @@ inorder = [9,3,15,20,7]
        15   7
 
 
+function buildTree(preorder, inorder) {
+    const map = new Map();
+
+    inorder.forEach(
+        (value, index) => map.set(value, index)
+    );
+
+    let preorderIndex = 0;
+
+    function helper(left, right) {
+        if (left > right) return null;
+
+        const rootVal =
+            preorder[preorderIndex++];
+
+        const root = {
+            val: rootVal,
+            left: null,
+            right: null
+        };
+
+        const inorderIndex =
+            map.get(rootVal);
+
+        root.left = helper(
+            left,
+            inorderIndex - 1
+        );
+
+        root.right = helper(
+            inorderIndex + 1,
+            right
+        );
+
+        return root;
+    }
+
+    return helper(0, inorder.length - 1);
+}
+
+
 
 
 
