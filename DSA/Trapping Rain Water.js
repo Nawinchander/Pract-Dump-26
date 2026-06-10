@@ -65,6 +65,13 @@ Space: O(1)
 
 // Find the area of the largest rectangle.
 
+heights = [2,1,5,6,2,3]
+
+Output = 10
+
+
+5 × 2 = 10
+
 
 
 
