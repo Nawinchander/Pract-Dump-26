@@ -80,6 +80,11 @@ function deserialize(data) {
 }
 
 
+Serialize: O(n)
+Deserialize: O(n)
+
+Space: O(n)
+
 
 
 
