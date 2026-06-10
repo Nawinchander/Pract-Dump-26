@@ -110,7 +110,19 @@ function largestRectangleArea(heights) {
 }
 
 
+Time: O(n)
+Space: O(n)
 
+
+
+| Topic               | Representative Problem      | Pattern             |
+| ------------------- | --------------------------- | ------------------- |
+| Tree Serialization  | Serialize Binary Tree       | DFS                 |
+| Tree Reconstruction | Build Tree from Traversals  | HashMap + Recursion |
+| Water Problems      | Trapping Rain Water         | Two Pointers        |
+| Stack Problems      | Largest Rectangle Histogram | Monotonic Stack     |
+| Sliding Window      | Sliding Window Maximum      | Deque               |
+| Array Optimization  | Container With Most Water   | Two Pointers        |
 
 
 
