@@ -142,6 +142,9 @@ function buildTree(preorder, inorder) {
 }
 
 
+Time: O(n)
+Space: O(n)
+
 
 
 
