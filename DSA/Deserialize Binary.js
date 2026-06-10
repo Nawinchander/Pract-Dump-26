@@ -86,6 +86,21 @@ Deserialize: O(n)
 Space: O(n)
 
 
+// Problem 2: Construct Binary Tree from Preorder and Inorder Traversal
+// LeetCode 105
+// Example
+
+preorder = [3,9,20,15,7]
+
+inorder = [9,3,15,20,7]
+
+        3
+       / \
+      9  20
+        /  \
+       15   7
+
+
 
 
 
