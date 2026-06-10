@@ -56,6 +56,17 @@ function trap(height) {
 }
 
 
+Time: O(n)
+Space: O(1)
+
+
+// Problem 4: Largest Rectangle in Histogram
+// LeetCode 84 (Hard)
+
+// Find the area of the largest rectangle.
+
+
+
 
 
 
