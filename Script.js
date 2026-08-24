@@ -263,6 +263,27 @@ function createFunk (){
 
 
 
+// let colors = ['red', 'blue', 'green', 'red', 'blue', 'yellow']
+
+// let colorCounts = colors.reduce((accumulator, currentValue) => {
+//     if(currentValue in accumulator){
+//         accumulator[currentValue]++
+//     } else {
+//         accumulator[currentValue] = 1
+//     }
+//     return accumulator
+//     }, {})
+
+//     console.log(colorCounts)
+
+
+// let number = [5, 10, 15, 20, 25]
+// let largest = number.reduce((accumulator,currentValue) => {
+//     return Math.max(accumulator, currentValue)
+// })
+
+// console.log(largest)
+
 
 
 
