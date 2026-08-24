@@ -242,6 +242,28 @@ function createFunk (){
 }
 
 
+//   const cartItems = [
+//     { name: 'Shirt', price: 20, quantity: 2 },
+//     { name: 'Pants', price: 30, quantity: 1 },
+//     { name: 'Shoes', price: 50, quantity: 1 }
+//   ];
+
+//   const item = cartItems.map(items => ({
+//     name: items.name,
+//     total: items.price * items.quantity
+//   }))
+
+//   console.log(item)
+
+// reduce method
+
+//   array.reduce(function(accumulator, currentValue, currentIndex, array) {
+// code to be executed on each iteration
+//   }, initialValue);
+
+
+
+
 
 
 
