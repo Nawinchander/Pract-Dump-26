@@ -1,0 +1,18 @@
+Advanced DSA — FAANG-Level JavaScript
+Level 1 — Advanced
+
+Focus: Graphs, DP, Heaps, Sliding Window, Backtracking, Advanced Trees
+
+#	Topic	Complex Problem	Main Pattern
+1	Graph	Word Ladder II	BFS + Backtracking
+2	Graph	Alien Dictionary	Topological Sort
+3	Graph	Cheapest Flights Within K Stops	Bellman-Ford / DP
+4	Heap	Sliding Window Median	Two Heaps
+5	DP	Longest Increasing Subsequence	Binary Search + DP
+6	DP	Edit Distance	2D DP
+7	Tree	Serialize & Deserialize Binary Tree	DFS
+8	Graph	Network Delay Time	Dijkstra
+9	Backtracking	N-Queens	Backtracking + Sets
+10	Graph	Number of Islands II	Union Find
+
+
