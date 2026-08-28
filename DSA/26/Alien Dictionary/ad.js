@@ -24,6 +24,30 @@
 
 
 
+// t → f
+
+// Therefore:
+
+// t comes before f
+
+// Then:
+
+// wrf
+// er
+
+// gives:
+
+// w → e
+
+// This creates a directed graph.
+
+// Then:
+
+// Topological Sort
+
+
+
+
 
 
 
