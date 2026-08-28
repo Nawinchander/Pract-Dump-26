@@ -106,6 +106,20 @@ function findLadders(beginWord, endWord, wordList) {
 }
 
 
+// Complexity
+
+// Let:
+
+// N = number of words
+// L = word length
+
+// Approximately:
+
+// Time: O(N × L × 26)
+// Space: O(N × L)
+
+// The actual output can itself be exponential, so output complexity must also be considered.
+
 
 
 
