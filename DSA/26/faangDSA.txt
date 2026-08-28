@@ -16,3 +16,56 @@ Focus: Graphs, DP, Heaps, Sliding Window, Backtracking, Advanced Trees
 10	Graph	Number of Islands II	Union Find
 
 
+LEVEL 1 — Problem 1
+🔥 Word Ladder II
+Problem
+
+Given:
+
+beginWord = "hit"
+endWord = "cog"
+
+wordList = [
+  "hot",
+  "dot",
+  "dog",
+  "lot",
+  "log",
+  "cog"
+]
+
+Return all shortest transformation sequences.
+
+A transformation changes exactly one character at a time.
+
+Expected:
+
+
+
+Return all shortest transformation sequences.
+
+A transformation changes exactly one character at a time.
+
+Expected:
+
+[
+  ["hit","hot","dot","dog","cog"],
+  ["hit","hot","lot","log","cog"]
+]
+Why this is difficult
+
+A normal Word Ladder is just BFS.
+
+Here we need:
+
+BFS
+ ↓
+find shortest distance
+ ↓
+preserve ALL shortest paths
+ ↓
+DFS/backtracking
+
+
+
+
