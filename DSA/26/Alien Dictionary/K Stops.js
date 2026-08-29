@@ -40,6 +40,31 @@
 
 
 
+function findCheapestPrice(n, flights, src, dst, k) {
+    let cost = new Array(n).fill(Infinity);
+
+    cost[src] = 0;
+
+    for (let stops = 0; stops <= k; stops++) {
+        const next = [...cost];
+
+        for (const [from, to, price] of flights) {
+            if (cost[from] === Infinity) continue;
+
+            next[to] = Math.min(
+                next[to],
+                cost[from] + price
+            );
+        }
+
+        cost = next;
+    }
+
+    return cost[dst] === Infinity ? -1 : cost[dst];
+}
+
+
+
 
 
 
