@@ -117,6 +117,22 @@ function alienOrder(words) {
 
 
 
+// Interview takeaway
+
+// When you see:
+
+// "Determine ordering based on dependencies"
+
+// Think:
+
+// Graph
+// +
+// Directed edges
+// +
+// Indegree
+// +
+// Topological Sort
+
 
 
 
