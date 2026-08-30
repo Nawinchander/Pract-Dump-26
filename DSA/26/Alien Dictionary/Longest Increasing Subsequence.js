@@ -50,6 +50,23 @@ function lengthOfLIS(nums) {
 
 
 
+// Complexity
+// Time: O(n log n)
+// Space: O(n)
+// FAANG insight
+
+// Whenever you see:
+
+// Longest Increasing Subsequence
+
+// Know both:
+
+// O(n²) DP
+
+// and
+
+// O(n log n) binary search
+
 
 
 
