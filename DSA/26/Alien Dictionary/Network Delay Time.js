@@ -76,6 +76,13 @@ function networkDelayTime(times, n, k) {
 }
 
 
+// Complexity
+
+// With a binary heap:
+
+// O((V + E) log V)
+
+
 
 
 
