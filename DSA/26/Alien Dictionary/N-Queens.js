@@ -82,7 +82,11 @@ function solveNQueens(n) {
 
 
 
+// FAANG pattern
 
+// This technique generalizes to:
+
+// Backtracking + Constraint Sets + Pruning
 
 
 
