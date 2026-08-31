@@ -64,6 +64,19 @@ function deserialize(data) {
 
 
 
+// Key interview concept
+
+// Serialization must preserve:
+
+// structure
+// +
+// values
+
+// That's why null nodes matter.
+
+
+
+
 
 
 
