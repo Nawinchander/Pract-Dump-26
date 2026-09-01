@@ -82,4 +82,48 @@ Bit manipulation
 
 
 
+How I Recommend You Practice
+
+For every problem, use this FAANG interview format:
+
+1. Understand the problem
+        ↓
+2. Give brute-force solution
+        ↓
+3. Identify bottleneck
+        ↓
+4. Optimize
+        ↓
+5. Explain data structure
+        ↓
+6. Write algorithm
+        ↓
+7. Code in JavaScript
+        ↓
+8. Dry run
+        ↓
+9. Time complexity
+        ↓
+10. Space complexity
+        ↓
+11. Edge cases
+        ↓
+12. Follow-up questions
+
+
+
+And don't immediately look at the solution.
+
+For each hard problem, give yourself:
+
+20 min → understand
+20 min → derive solution
+20 min → code
+10 min → debug
+10 min → explain aloud
+Your progression should be
+
+
+
+
 
