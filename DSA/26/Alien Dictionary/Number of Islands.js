@@ -74,3 +74,68 @@ class DSU {
 
 
 /// Main algorithm :::;
+
+
+function numIslands2(m, n, positions) {
+    const dsu = new DSU(m * n);
+
+    const land = new Set();
+    const result = [];
+
+    let islands = 0;
+
+    const directions = [
+        [1, 0],
+        [-1, 0],
+        [0, 1],
+        [0, -1]
+    ];
+
+    for (const [r, c] of positions) {
+        const id = r * n + c;
+
+        if (land.has(id)) {
+            result.push(islands);
+            continue;
+        }
+
+        land.add(id);
+        islands++;
+
+        for (const [dr, dc] of directions) {
+            const nr = r + dr;
+            const nc = c + dc;
+
+            if (
+                nr < 0 ||
+                nr >= m ||
+                nc < 0 ||
+                nc >= n
+            ) {
+                continue;
+            }
+
+            const neighbor = nr * n + nc;
+
+            if (land.has(neighbor)) {
+                if (dsu.union(id, neighbor)) {
+                    islands--;
+                }
+            }
+        }
+
+        result.push(islands);
+    }
+
+    return result;
+}
+
+
+
+
+
+
+
+
+
+
