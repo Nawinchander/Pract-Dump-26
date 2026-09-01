@@ -160,6 +160,21 @@ function numIslands2(m, n, positions) {
 // | 20 | Largest Rectangle in Histogram        | Monotonic Stack    |
 
 
+These are where you should start thinking:
+
+"What is the state?"
+
+"What information must I preserve?"
+
+"Can I prune?"
+
+"Can I reduce the state space?"
+
+"Can I preprocess?"
+
+"Can I trade memory for time?"
+
+
 
 
 
