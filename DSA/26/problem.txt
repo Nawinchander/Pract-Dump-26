@@ -69,5 +69,17 @@ State compression
 Learn:
 
 
+Segment Tree
+Range Query
+Point Update
+10. Maximum XOR
+
+Learn:
+
+Binary Trie
+Greedy bit selection
+Bit manipulation
+
+
 
 
