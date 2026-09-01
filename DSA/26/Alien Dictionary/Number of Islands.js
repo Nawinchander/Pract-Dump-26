@@ -160,19 +160,39 @@ function numIslands2(m, n, positions) {
 // | 20 | Largest Rectangle in Histogram        | Monotonic Stack    |
 
 
-These are where you should start thinking:
+// These are where you should start thinking:
 
-"What is the state?"
+// "What is the state?"
 
-"What information must I preserve?"
+// "What information must I preserve?"
 
-"Can I prune?"
+// "Can I prune?"
 
-"Can I reduce the state space?"
+// "Can I reduce the state space?"
 
-"Can I preprocess?"
+// "Can I preprocess?"
 
-"Can I trade memory for time?"
+// "Can I trade memory for time?"
+
+
+
+// | #  | Problem                             | Advanced Concept        |
+// | -- | ----------------------------------- | ----------------------- |
+// | 21 | Median of Two Sorted Arrays         | Binary Search Partition |
+// | 22 | Minimum Cost to Connect Points      | MST + DSU               |
+// | 23 | Shortest Path Visiting All Nodes    | Bitmask DP + BFS        |
+// | 24 | Merge K Sorted Lists                | Heap                    |
+// | 25 | Count of Smaller Numbers After Self | Fenwick Tree            |
+// | 26 | Range Sum Query Mutable             | Segment Tree            |
+// | 27 | Maximum XOR of Two Numbers          | Binary Trie             |
+// | 28 | Palindrome Pairs                    | Trie + Hashing          |
+// | 29 | Word Search II                      | Trie + Backtracking     |
+// | 30 | Longest Valid Parentheses           | Stack / DP              |
+// | 31 | Minimum Number of Refueling Stops   | Greedy + Heap           |
+// | 32 | Distinct Subsequences               | DP                      |
+// | 33 | Scramble String                     | 3D DP                   |
+// | 34 | Maximal Rectangle                   | Histogram + Stack       |
+// | 35 | Sliding Window Maximum              | Monotonic Deque         |
 
 
 
