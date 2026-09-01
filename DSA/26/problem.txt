@@ -42,5 +42,32 @@ Lazy deletion
 Balanced state
 
 
+6. Count Smaller Numbers After Self
+
+Learn:
+
+Merge Sort
+Fenwick Tree
+Coordinate Compression
+7. Word Search II
+
+Learn:
+
+Trie
+DFS
+Backtracking
+Pruning
+8. Shortest Path Visiting All Nodes
+
+Learn:
+
+Bitmask
+BFS
+State compression
+9. Range Sum Query Mutable
+
+Learn:
+
+
 
 
