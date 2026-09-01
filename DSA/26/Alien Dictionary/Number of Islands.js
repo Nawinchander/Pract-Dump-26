@@ -132,6 +132,34 @@ function numIslands2(m, n, positions) {
 
 
 
+// Complexity
+
+// With path compression + union by rank:
+
+// Almost O(1) per operation
+
+// More formally:
+
+// O(α(N))
+
+// where α is the inverse Ackermann function.
+
+
+
+// | #  | Problem                               | Main Technique     |
+// | -- | ------------------------------------- | ------------------ |
+// | 11 | Trapping Rain Water II                | Min Heap + BFS     |
+// | 12 | Minimum Window Substring              | Sliding Window     |
+// | 13 | Regular Expression Matching           | DP                 |
+// | 14 | Burst Balloons                        | Interval DP        |
+// | 15 | Word Break II                         | DP + Backtracking  |
+// | 16 | Critical Connections in a Network     | Tarjan's Algorithm |
+// | 17 | Reconstruct Itinerary                 | Eulerian Path      |
+// | 18 | Alien Dictionary with cycle detection | Topological Sort   |
+// | 19 | Maximum Profit in Job Scheduling      | DP + Binary Search |
+// | 20 | Largest Rectangle in Histogram        | Monotonic Stack    |
+
+
 
 
 
