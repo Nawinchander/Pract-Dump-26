@@ -1,0 +1,46 @@
+The 10 Problems I'd Prioritize
+
+If your goal is specifically FAANG + Software Architect-level problem solving, don't try to memorize 100 solutions.
+
+Master these 10 deeply:
+
+1. Median of Two Sorted Arrays
+
+Learn:
+
+Binary Search
+Partitioning
+Invariants
+2. Word Ladder II
+
+Learn:
+
+BFS
+DFS
+Shortest-path reconstruction
+
+
+3. Critical Connections
+
+Learn:
+
+DFS
+Discovery time
+Low-link values
+Bridges
+4. Burst Balloons
+
+Learn:
+
+Interval DP
+5. Sliding Window Median
+
+Learn:
+
+Two Heaps
+Lazy deletion
+Balanced state
+
+
+
+
