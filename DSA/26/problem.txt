@@ -125,5 +125,21 @@ Your progression should be
 
 
 
+/// progression
+
+                     FAANG DSA
+                         │
+          ┌──────────────┼──────────────┐
+          ↓              ↓              ↓
+       Level 1        Level 2        Level 3
+       Advanced       Very Hard      Expert
+          │              │              │
+       Graphs           DP          Segment Tree
+       Heaps            Trie        Fenwick Tree
+       Trees            MST         Bitmask DP
+       Backtracking     Tarjan      Advanced Graph
+       Binary Search    Greedy      Advanced DP
+
+
 
 
