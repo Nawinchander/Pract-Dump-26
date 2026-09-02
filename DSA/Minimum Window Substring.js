@@ -68,3 +68,41 @@ function minWindow(s, t) {
 
 
 
+
+// Dry Run
+// s = ADOBECODEBANC
+// t = ABC
+
+// Eventually we get:
+
+// ADOBEC
+
+// It contains:
+
+// A
+// B
+// C
+
+// Now shrink:
+
+// DOBEC
+
+// Still valid.
+
+// Continue expanding and shrinking.
+
+// Eventually:
+
+
+// BANC
+
+// is the smallest valid window.
+
+// Therefore:
+
+// "BANC"
+
+
+
+
+
