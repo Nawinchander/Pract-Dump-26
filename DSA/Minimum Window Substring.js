@@ -102,6 +102,26 @@ function minWindow(s, t) {
 
 // "BANC"
 
+Complexity
+Time:  O(n)
+Space: O(k)
+
+// where k is the number of distinct characters.
+
+// FAANG takeaway
+
+// When you see:
+
+// "smallest/largest substring satisfying a condition"
+
+// Immediately consider:
+
+// Sliding Window
+// +
+// Frequency Map
+// +
+// Two Pointers
+
 
 
 

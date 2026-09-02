@@ -1,0 +1,16 @@
+Maximum XOR of Two Numbers
+Difficulty: Hard
+Topic
+
+Binary Trie + Bit Manipulation + Greedy
+
+Given:
+
+nums = [3, 10, 5, 25, 2, 8]
+
+Find the maximum:
+
+nums[i] XOR nums[j]
+Answer
+
+
