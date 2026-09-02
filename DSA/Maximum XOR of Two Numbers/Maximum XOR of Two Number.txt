@@ -13,4 +13,28 @@ Find the maximum:
 nums[i] XOR nums[j]
 Answer
 
+Why Trie?
+
+For XOR, each bit matters.
+
+For every bit:
+
+0 XOR 1 = 1
+1 XOR 0 = 1
+
+So we want the opposite bit whenever possible.
+
+For example, if our current number has:
+
+1
+
+we prefer:
+
+0
+
+from the other number.
+
+This becomes a greedy search from the most significant bit.
+
+
 
