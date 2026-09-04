@@ -38,4 +38,32 @@ module.exports = {
 
 
 
+// Important interview concept
+
+// The deque stores indexes, not values.
+
+// For:
+
+// [1, 3, -1, -3, 5]
+
+// When 3 arrives:
+
+// 1 < 3
+
+// So 1 can never become the maximum of a future window containing 3.
+
+// Therefore we remove it.
+
+// The deque maintains decreasing values:
+
+// 3
+// 3,-1
+// 5
+
+// The front is always the maximum.
+
+
+
+
+
 
