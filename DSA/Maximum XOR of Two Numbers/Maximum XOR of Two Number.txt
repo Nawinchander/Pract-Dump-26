@@ -113,6 +113,24 @@ Frequency Map
 
 
 
+O(n)
+Problem 12
+Maximum XOR
+
+        ↓
+
+Binary Trie
+        +
+Bit Manipulation
+        +
+Greedy
+
+        ↓
+
+O(n × bits)
+
+
+
 
 
 
