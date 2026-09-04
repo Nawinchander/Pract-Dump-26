@@ -93,6 +93,25 @@ Time:  O(n)
 Space: O(n)
 
 
+The Two Important Patterns
+
+You now have two very useful FAANG patterns:
+
+Problem 11
+Minimum Window Substring
+
+        ↓
+
+Sliding Window
+        +
+Two Pointers
+        +
+Frequency Map
+
+        ↓
+
+
+
 
 
 
