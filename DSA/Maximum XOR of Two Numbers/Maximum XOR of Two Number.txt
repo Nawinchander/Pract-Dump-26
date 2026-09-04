@@ -38,3 +38,30 @@ This becomes a greedy search from the most significant bit.
 
 
 
+Dry Run
+
+Input:
+
+[3, 10, 5, 25, 2, 8]
+
+For:
+
+5 = 00101
+
+We want another number with bits as opposite as possible:
+
+11001
+
+which is:
+
+25
+
+Therefore:
+
+
+
+
+
+
+
+
