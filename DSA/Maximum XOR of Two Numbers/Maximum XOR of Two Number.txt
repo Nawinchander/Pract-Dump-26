@@ -75,6 +75,24 @@ returns:
 
 28
 
+Complexity
+
+Let B be the number of bits.
+
+Insert:    O(B)
+Query:     O(B)
+N numbers: O(N × B)
+
+For 32-bit integers:
+
+B = 31/32
+
+Therefore effectively:
+
+Time:  O(n)
+Space: O(n)
+
+
 
 
 
