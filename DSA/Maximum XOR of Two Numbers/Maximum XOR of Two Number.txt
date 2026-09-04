@@ -59,6 +59,22 @@ which is:
 Therefore:
 
 
+Therefore:
+
+00101
+11001
+-----
+11100
+11100₂ = 28
+
+So:
+
+findMaximumXOR([3, 10, 5, 25, 2, 8]);
+
+returns:
+
+28
+
 
 
 
