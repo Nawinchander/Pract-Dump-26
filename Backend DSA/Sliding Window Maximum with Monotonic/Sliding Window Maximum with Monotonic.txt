@@ -19,3 +19,27 @@ O(n × k)
 The expected solution uses a Monotonic Deque:
 
 
+The expected solution uses a Monotonic Deque:
+
+Time:  O(n)
+Space: O(k)
+Project Structure
+advanced-dsa-api/
+│
+├── controllers/
+│   └── window.controller.js
+│
+├── services/
+│   └── window.service.js
+│
+├── routes/
+│   └── window.routes.js
+│
+├── app.js
+├── server.js
+└── package.json
+
+
+
+
+
