@@ -17,3 +17,57 @@ C --8------ D
 
 Input:
 
+{
+  "graph": {
+    "A": {
+      "B": 4,
+      "C": 2
+    },
+    "B": {
+      "A": 4,
+      "C": 1,
+      "D": 5
+    },
+    "C": {
+      "A": 2,
+      "B": 1,
+      "D": 8
+    },
+    "D": {
+      "B": 5,
+      "C": 8
+    }
+  },
+  "source": "A",
+  "target": "D"
+}
+
+
+
+
+Expected:
+
+{
+  "distance": 7,
+  "path": ["A", "C", "B", "D"]
+}
+
+Because:
+
+A → C = 2
+C → B = 1
+B → D = 5
+
+Total = 8
+
+Actually, with those weights the shortest path is 8, not 7:
+
+A → C → B → D
+2 + 1 + 5 = 8
+
+This is exactly the kind of detail you should catch in an interview.
+
+
+
+
+
