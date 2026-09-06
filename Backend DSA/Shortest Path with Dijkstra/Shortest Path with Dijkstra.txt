@@ -83,4 +83,36 @@ This is much closer to what you'd discuss in a FAANG system/backend interview.
 
 
 
+What we are building
+
+We will create a REST API:
+
+POST /api/dsa/shortest-path
+
+It accepts a weighted graph:
+
+A --4-- B
+|      / \
+2     1   5
+|    /     \
+C --------- D
+      8
+
+And returns:
+
+{
+  "distance": 8,
+  "path": ["A", "C", "B", "D"]
+}
+
+The implementation will use:
+
+
+Graph
+Dijkstra's Algorithm
+Min Heap / Priority Queue
+Adjacency List
+REST API
+Controller → Service separation
+
 
