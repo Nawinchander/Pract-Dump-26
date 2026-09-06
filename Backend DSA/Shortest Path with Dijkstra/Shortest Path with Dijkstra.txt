@@ -1,0 +1,19 @@
+Shortest Path with Dijkstra
+
+Now let's make the backend problem significantly harder.
+
+Problem
+
+Build an API that receives a weighted graph and finds the shortest path between two nodes.
+
+Example:
+
+A --4-- B
+|      / \
+2     1   5
+|    /     \
+C --8------ D
+
+
+Input:
+
