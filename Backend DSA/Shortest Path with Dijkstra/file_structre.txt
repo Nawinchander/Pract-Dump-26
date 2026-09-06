@@ -1,0 +1,23 @@
+dijkstra-api/
+│
+├── controllers/
+│   └── path.controller.js
+│
+├── services/
+│   ├── path.service.js
+│   └── priorityQueue.js
+│
+├── routes/
+│   └── path.routes.js
+│
+├── tests/
+│   └── path.test.js
+│
+├── app.js
+├── server.js
+├── package.json
+├── package-lock.json
+└── .gitignore
+
+
+
