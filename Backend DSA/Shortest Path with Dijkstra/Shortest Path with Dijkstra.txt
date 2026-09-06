@@ -69,5 +69,18 @@ This is exactly the kind of detail you should catch in an interview.
 
 
 
+Why this is advanced
+
+A naive implementation repeatedly scans all nodes:
+
+O(V²)
+
+A better implementation uses a Min Heap / Priority Queue:
+
+O((V + E) log V)
+
+This is much closer to what you'd discuss in a FAANG system/backend interview.
+
+
 
 
