@@ -1,0 +1,23 @@
+10. What is "relaxation"?
+
+This is a very important interview term.
+
+We have:
+
+const newDistance =
+  currentDistance + weight;
+
+Then:
+
+if (newDistance < distances[neighbor]) {
+
+We're asking:
+
+"Did I find a shorter route to this node?"
+
+If yes:
+
+distances[neighbor] = newDistance;
+
+This operation is called edge relaxation.
+

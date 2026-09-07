@@ -262,6 +262,31 @@ D = 10
 
 
 
+Process B
+
+B → D:
+
+3 + 5 = 8
+
+Previously:
+
+D = 10
+
+Therefore:
+
+D = 8
+
+Final:
+
+A = 0
+C = 2
+B = 3
+D = 8
+
+Path:
+
+A → C → B → D
+
 
 
 
