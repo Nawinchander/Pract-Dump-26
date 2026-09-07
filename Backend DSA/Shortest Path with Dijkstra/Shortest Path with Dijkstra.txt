@@ -213,6 +213,26 @@ Heap:
 
 
 
+Process A
+
+Neighbors:
+
+B = 4
+C = 2
+
+Now:
+
+A = 0
+B = 4
+C = 2
+D = ∞
+
+Heap:
+
+[2,C]
+[4,B]
+
+
 
 
 
