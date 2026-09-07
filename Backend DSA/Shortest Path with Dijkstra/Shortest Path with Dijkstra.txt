@@ -188,6 +188,30 @@ Remove minimum = O(log V)
 That's why the heap is important.
 
 
+Understand the algorithm
+
+Suppose:
+
+A → B = 4
+A → C = 2
+
+C → B = 1
+C → D = 8
+
+B → D = 5
+
+Start:
+
+distance[A] = 0
+distance[B] = ∞
+distance[C] = ∞
+distance[D] = ∞
+
+Heap:
+
+[0, A]
+
+
 
 
 
