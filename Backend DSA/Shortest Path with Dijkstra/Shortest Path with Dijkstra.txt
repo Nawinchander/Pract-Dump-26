@@ -116,3 +116,40 @@ REST API
 Controller → Service separation
 
 
+
+controllers/
+    Handles HTTP request/response
+
+services/
+    Contains DSA/business logic
+
+routes/
+    Defines API endpoints
+
+tests/
+    Tests the Dijkstra algorithm/API
+
+app.js
+    Creates Express application
+
+server.js
+    Starts HTTP server
+
+
+
+
+
+Client
+   ↓
+Route
+   ↓
+Controller
+   ↓
+Service
+   ↓
+Dijkstra Algorithm
+   ↓
+Min Heap
+
+
+
