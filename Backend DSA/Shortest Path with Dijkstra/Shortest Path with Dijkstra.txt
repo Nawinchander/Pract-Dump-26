@@ -153,3 +153,35 @@ Min Heap
 
 
 
+Understand the Min Heap
+
+Dijkstra repeatedly needs:
+
+"Give me the unprocessed node with the smallest distance."
+
+For example:
+
+A = 0
+B = 4
+C = 2
+D = 8
+
+We want:
+
+C = 2
+
+before:
+
+B = 4
+D = 8
+
+A normal array would require scanning:
+
+O(V)
+
+
+
+
+
+
+
