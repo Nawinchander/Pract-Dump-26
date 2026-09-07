@@ -180,6 +180,14 @@ A normal array would require scanning:
 O(V)
 
 
+A Min Heap gives us approximately:
+
+Insert = O(log V)
+Remove minimum = O(log V)
+
+That's why the heap is important.
+
+
 
 
 
