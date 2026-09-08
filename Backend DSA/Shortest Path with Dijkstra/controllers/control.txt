@@ -1,0 +1,22 @@
+Why controller and service are separate
+
+Don't put Dijkstra directly inside the controller.
+
+Bad:
+
+function controller(req, res) {
+
+  // 100 lines of Dijkstra
+}
+
+Better:
+
+Controller
+    ↓
+Service
+    ↓
+Algorithm
+
+The controller handles:
+
+
