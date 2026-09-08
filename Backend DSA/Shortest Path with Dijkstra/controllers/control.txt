@@ -20,3 +20,22 @@ Algorithm
 The controller handles:
 
 
+The controller handles:
+
+HTTP
+validation
+response
+status codes
+
+The service handles:
+
+DSA
+business logic
+algorithm
+
+This is a good backend interview practice.
+
+
+
+
+
