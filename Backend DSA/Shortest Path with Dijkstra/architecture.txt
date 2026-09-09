@@ -24,6 +24,49 @@
 
 
 
+dijkstra-api/
+│
+├── controllers/
+│   └── path.controller.js
+│
+├── services/
+│   ├── path.service.js
+│   └── priorityQueue.js
+│
+├── routes/
+│   └── path.routes.js
+│
+├── tests/
+│   └── path.test.js
+│
+├── app.js
+├── server.js
+├── package.json
+├── package-lock.json
+└── .gitignore
+
+
+
+Complexity — interview answer
+
+For:
+
+V = number of vertices
+E = number of edges
+
+Using adjacency list + binary Min Heap:
+
+Time:
+O((V + E) log V)
+
+Space:
+O(V + E)
+
+For a typical connected graph this is often simplified to:
+
+O(E log V)
+
+
 
 
 
