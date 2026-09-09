@@ -1,0 +1,20 @@
+Once you understand this implementation, don't stop at simply memorizing Dijkstra.
+
+You should be able to answer:
+
+Level 1
+
+Why Dijkstra?
+
+Because it finds the shortest path from a source to other vertices when edge weights are non-negative.
+
+Level 2
+
+Why not BFS?
+
+BFS works for unweighted graphs or equal-weight edges.
+
+Dijkstra handles different non-negative weights.
+
+
+
