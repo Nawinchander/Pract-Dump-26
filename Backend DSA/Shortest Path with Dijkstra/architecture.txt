@@ -1,0 +1,29 @@
+                    Client
+                      │
+                      │ POST
+                      ▼
+          /api/dsa/shortest-path
+                      │
+                      ▼
+              path.routes.js
+                      │
+                      ▼
+             path.controller.js
+                      │
+                      ▼
+              path.service.js
+                      │
+             ┌────────┴────────┐
+             ▼                 ▼
+         Graph Logic        MinHeap
+                               │
+                               ▼
+                       priorityQueue.js
+
+
+
+
+
+
+
+

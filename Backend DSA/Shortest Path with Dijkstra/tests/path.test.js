@@ -94,3 +94,19 @@ describe("Dijkstra API", () => {
 
 
 
+// Run:
+
+// npm test
+
+// You should get something similar to:
+
+// PASS tests/path.test.js
+
+// ✓ should find shortest path
+// ✓ should return empty path when no route exists
+// ✓ should reject missing input
+
+
+
+
+
