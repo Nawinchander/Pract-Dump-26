@@ -7,3 +7,9 @@ app.listen(PORT, () => {
     `Server running on http://localhost:${PORT}`
   );
 });
+
+
+
+// npm start
+
+// Server running on http://localhost:3000
