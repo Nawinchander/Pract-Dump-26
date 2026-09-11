@@ -1,0 +1,5 @@
+Project: Advanced DSA + Node.js + Express + MongoDB + MySQL
+The two problems
+Problem	DSA	MongoDB	MySQL
+1. Smart Route Optimizer	Dijkstra + Priority Queue + Graph	Store route/traffic snapshots	Store users/routes/search history
+
