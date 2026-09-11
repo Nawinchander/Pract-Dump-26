@@ -1,0 +1,8 @@
+| Problem                      | DSA                                    | MongoDB                            | MySQL                                  |
+| ---------------------------- | -------------------------------------- | ---------------------------------- | -------------------------------------- |
+| | Dependency Scheduler**  | Topological Sort + DFS + Critical Path | Store project/dependency documents | Store projects/tasks/execution history |
+
+
+
+
+
