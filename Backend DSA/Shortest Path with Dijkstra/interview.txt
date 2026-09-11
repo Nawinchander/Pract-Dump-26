@@ -38,5 +38,21 @@ What if the graph has millions of nodes?
 Then you should start discussing:
 
 
+Then you should start discussing:
+
+Graph partitioning
+Caching
+Redis
+Priority queues
+Database/storage
+Distributed computation
+API rate limiting
+Load balancing
+Geospatial indexing
+Level 6 — Real backend scenario
+
+This DSA can be transformed into a:
+
+
 
 
