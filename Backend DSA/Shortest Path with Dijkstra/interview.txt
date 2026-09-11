@@ -17,4 +17,26 @@ BFS works for unweighted graphs or equal-weight edges.
 Dijkstra handles different non-negative weights.
 
 
+Level 3
+
+Why Min Heap?
+
+We need to efficiently retrieve the node having the smallest known distance.
+
+Level 4
+
+Can Dijkstra handle negative weights?
+
+No.
+
+For negative edge weights, consider Bellman-Ford.
+
+Level 5
+
+What if the graph has millions of nodes?
+
+Then you should start discussing:
+
+
+
 
