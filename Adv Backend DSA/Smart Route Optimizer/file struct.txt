@@ -1,0 +1,98 @@
+advanced-dsa-backend/
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   │
+│   ├── config/
+│   │   ├── env.js
+│   │   ├── mongo.js
+│   │   └── mysql.js
+│   │
+│   ├── controllers/
+│   │   ├── route.controller.js
+│   │   └── scheduler.controller.js
+│   │
+│   ├── services/
+│   │   ├── route.service.js
+│   │   └── scheduler.service.js
+│   │
+│   ├── repositories/
+│   │   ├── route.repository.js
+│   │   ├── project.repository.js
+│   │   └── task.repository.js
+│   │
+│   ├── models/
+│   │   ├── mongo/
+│   │   │   ├── TrafficSnapshot.js
+│   │   │   └── DependencyGraph.js
+│   │   │
+│   │   └── mysql/
+│   │       ├── User.js
+│   │       ├── RouteSearch.js
+│   │       ├── Project.js
+│   │       └── Task.js
+│   │
+│   ├── dsa/
+│   │   ├── graph/
+│   │   │   ├── Graph.js
+│   │   │   ├── PriorityQueue.js
+│   │   │   └── dijkstra.js
+│   │   │
+│   │   └── scheduler/
+│   │       ├── topologicalSort.js
+│   │       └── criticalPath.js
+│   │
+│   ├── routes/
+│   │   ├── route.routes.js
+│   │   └── scheduler.routes.js
+│   │
+│   ├── middleware/
+│   │   ├── error.middleware.js
+│   │   ├── validation.middleware.js
+│   │   └── requestId.middleware.js
+│   │
+│   ├── validators/
+│   │   ├── route.validator.js
+│   │   └── scheduler.validator.js
+│   │
+│   └── utils/
+│       └── ApiError.js
+│
+├── tests/
+│   ├── unit/
+│   │   ├── dijkstra.test.js
+│   │   ├── priorityQueue.test.js
+│   │   ├── topologicalSort.test.js
+│   │   └── criticalPath.test.js
+│   │
+│   ├── integration/
+│   │   ├── route.integration.test.js
+│   │   └── scheduler.integration.test.js
+│   │
+│   ├── api/
+│   │   ├── route.api.test.js
+│   │   └── scheduler.api.test.js
+│   │
+│   ├── database/
+│   │   ├── mysql.test.js
+│   │   └── mongo.test.js
+│   │
+│   ├── e2e/
+│   │   └── workflow.e2e.test.js
+│   │
+│   └── performance/
+│       └── route.load.js
+│
+├── sql/
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── package.json
+├── .env
+├── .env.test
+├── .gitignore
+└── README.md
+
+
+
