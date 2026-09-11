@@ -54,5 +54,24 @@ Level 6 — Real backend scenario
 This DSA can be transformed into a:
 
 
+Level 6 — Real backend scenario
+
+This DSA can be transformed into a:
+
+Uber / Ola
+     ↓
+Find nearest driver
+     ↓
+Road network
+     ↓
+Weighted graph
+     ↓
+Shortest route
+     ↓
+Dijkstra / A*
+
+That is where this becomes a DSA + backend + system-design interview project, rather than just a LeetCode exercise.
+
+
 
 
