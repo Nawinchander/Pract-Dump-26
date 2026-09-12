@@ -1,0 +1,25 @@
+PROBLEM 1
+Smart Route Optimizer
+
+This is your first advanced DSA problem.
+
+Imagine:
+
+A ----4---- B
+|          /|
+2        1  |
+|      /    |
+C ----3-----D
+
+You need to find the shortest route from one location to another.
+
+But instead of simply using an array and looping through everything, we'll implement:
+
+Graph + Min Heap Priority Queue + Dijkstra
+
+
+
+
+
+
+
