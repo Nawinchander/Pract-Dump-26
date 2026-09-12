@@ -19,6 +19,29 @@ Graph + Min Heap Priority Queue + Dijkstra
 
 
 
+9. Dijkstra algorithm
+
+We need:
+
+Graph
+   ↓
+Priority Queue
+   ↓
+Dijkstra
+   ↓
+Shortest path
+
+Complexity:
+
+Time:
+O((V + E) log V)
+
+Space:
+O(V + E)
+
+This is much better than repeatedly scanning every node
+
+
 
 
 
