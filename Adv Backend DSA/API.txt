@@ -3,3 +3,41 @@ Content-Type: application/json
 
 
 
+{
+    "userId": 1,
+    "source": "A",
+    "destination": "D",
+    "edges": [
+        {
+            "source": "A",
+            "destination": "B",
+            "weight": 4
+        },
+        {
+            "source": "A",
+            "destination": "C",
+            "weight": 2
+        },
+        {
+            "source": "C",
+            "destination": "B",
+            "weight": 1
+        },
+        {
+            "source": "B",
+            "destination": "D",
+            "weight": 5
+        },
+        {
+            "source": "C",
+            "destination": "D",
+            "weight": 8
+        }
+    ]
+}
+
+
+
+
+
+
