@@ -49,4 +49,13 @@
 
 
 
+{
+    "completionTime": 12,
+    "criticalPath": [
+        "A",
+        "B",
+        "D"
+    ]
+}
+
 
