@@ -21,5 +21,32 @@
         {
             "from": "A",
             "to": "B"
+},
+        {
+            "from": "A",
+            "to": "C"
+        },
+        {
+            "from": "B",
+            "to": "D"
+        },
+        {
+            "from": "C",
+            "to": "D"
+        }
+    ]
+}
 
-            
+
+
+// The critical path is:
+
+// A → B → D
+
+// Total:
+
+// 3 + 5 + 4 = 12
+
+
+
+
