@@ -36,4 +36,15 @@ module.exports =
 
 
 
-    
+
+
+//     MongoDB stores the flexible dependency graph.
+
+// MySQL stores relational entities:
+
+// projects
+// tasks
+// task_execution_history
+
+// This gives you a legitimate reason for using both databases, rather than simply adding two databases for the sake of it.
+
