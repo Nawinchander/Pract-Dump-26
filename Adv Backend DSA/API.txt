@@ -38,6 +38,20 @@ Content-Type: application/json
 
 
 
+{
+    "success": true,
+    "data": {
+        "distance": 8,
+        "path": [
+            "A",
+            "C",
+            "B",
+            "D"
+        ]
+    }
+}
+
+
 
 
 

@@ -1,0 +1,32 @@
+Intelligent Dependency Scheduler
+
+This is another strong interview-level DSA problem.
+
+Imagine:
+
+A → B → D
+↓
+C → D
+
+Each task takes a certain amount of time.
+
+Example:
+
+A = 3 hours
+B = 5 hours
+C = 2 hours
+D = 4 hours
+
+We need to determine:
+
+Whether a dependency cycle exists.
+Valid execution order.
+Earliest completion time.
+Critical path.
+This uses:
+
+Topological Sort + DAG + Critical Path
+
+
+
+
