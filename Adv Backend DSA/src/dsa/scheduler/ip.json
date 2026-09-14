@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "id": "A",
+            "duration": 3
+        },
+        {
+            "id": "B",
+            "duration": 5
+        },
+        {
+            "id": "C",
+            "duration": 2
+        },
+        {
+            "id": "D",
+            "duration": 4
+        }
+    ],
+    "dependencies": [
+        {
+            "from": "A",
+            "to": "B"
+
+            
