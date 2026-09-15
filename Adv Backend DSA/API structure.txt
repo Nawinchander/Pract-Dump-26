@@ -1,0 +1,17 @@
+
+
+Your API structure
+
+You now have:
+
+GET
+/health
+Dijkstra
+POST
+/api/routes/shortest
+Critical path
+POST
+/api/scheduler/critical-path
+
+
+
