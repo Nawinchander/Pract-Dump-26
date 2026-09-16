@@ -1,0 +1,42 @@
+Testing architecture
+
+Now comes the important part.
+
+Don't only write:
+
+DSA test
+
+For a professional backend, test different layers.
+
+
+For a professional backend, test different layers.
+
+                  Backend
+                     │
+       ┌─────────────┼─────────────┐
+       │             │             │
+      Unit       Integration       API
+       │             │             │
+       │             │             │
+      DSA          DB + Service   HTTP
+       │             │             │
+       └─────────────┼─────────────┘
+                     │
+                    E2E
+                     │
+                Full workflow
+
+We'll use:
+
+1. Unit testing
+
+Tests individual algorithms/functions.
+
+
+29 - Intergration testing
+
+
+
+
+
+
