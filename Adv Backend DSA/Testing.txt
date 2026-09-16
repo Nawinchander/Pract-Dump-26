@@ -35,7 +35,46 @@ Tests individual algorithms/functions.
 
 29 - Intergration testing
 
+2. Integration testing
 
+Tests:
+
+Service
+   +
+Repository
+   +
+Database
+3. API testing
+
+Tests:
+
+HTTP
+status codes
+request
+response
+validation
+
+
+4. Database testing
+
+
+Tests:
+
+MySQL
+MongoDB
+CRUD
+constraints
+5. End-to-end testing
+
+Tests the entire workflow.
+
+6. Performance testing
+
+Tests:
+
+requests/second
+latency
+throughput
 
 
 
