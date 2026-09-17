@@ -1,0 +1,17 @@
+This allows tests to run against a temporary MongoDB instance instead of damaging your development database.
+
+Conceptually:
+
+
+Jest
+ ↓
+MongoMemoryServer
+ ↓
+Temporary MongoDB
+ ↓
+Test
+ ↓
+Destroy database
+
+
+
