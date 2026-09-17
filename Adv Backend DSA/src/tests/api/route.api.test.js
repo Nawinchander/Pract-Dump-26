@@ -74,4 +74,22 @@ fuckk off you alll
 
 
 
+test("should reject invalid request", async () => {
+
+    const response =
+        await request(app)
+            .post("/api/routes/shortest")
+            .send({});
+
+    expect(
+        response.statusCode
+    ).toBe(500);
+});
+
+
+
+
+
+
+
 
