@@ -29,3 +29,27 @@ Can the API execute the whole route-search workflow and save the result?
 
 
 
+End-to-end testing
+
+Your E2E test should look conceptually like:
+
+Create user
+     ↓
+Create route
+     ↓
+Request shortest path
+     ↓
+Dijkstra executes
+     ↓
+Result stored in MySQL
+     ↓
+Traffic snapshot stored in MongoDB
+     ↓
+API returns result
+     ↓
+Verify database records
+
+This is much closer to what a production backend actually does.
+
+
+
