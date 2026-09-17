@@ -1,0 +1,31 @@
+Integration test
+
+An integration test should test multiple components together.
+
+For example:
+
+HTTP Request
+     ↓
+Controller
+     ↓
+Service
+     ↓
+Dijkstra
+     ↓
+Repository
+     ↓
+MySQL
+
+That's different from your unit test.
+
+The unit test asks:
+
+Does Dijkstra calculate the correct answer?
+
+The integration test asks:
+
+Can the API execute the whole route-search workflow and save the result?
+
+
+
+
