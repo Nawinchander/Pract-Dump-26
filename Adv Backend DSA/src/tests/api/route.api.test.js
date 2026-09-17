@@ -88,6 +88,16 @@ test("should reject invalid request", async () => {
 
 
 
+// Later, after adding Zod validation, this should become:
+
+// 400 Bad Request
+
+// rather than:
+
+// 500 Internal Server Error
+
+// That's an important backend improvement.
+
 
 
 
