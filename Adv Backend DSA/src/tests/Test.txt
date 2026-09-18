@@ -1,0 +1,53 @@
+Testing pyramid for this project
+
+Your final project should have approximately:
+
+                    E2E
+                   /   \
+                  /     \
+             API Tests
+             /       \
+        Integration Tests
+        /               \
+       /                 \
+  Unit Tests          DB Tests
+
+I'd aim for:
+
+Unit tests           50+
+Integration tests    15+
+API tests            15+
+Database tests       10+
+E2E tests              3-5
+Performance tests      2-3
+
+You don't need 100 tests just for the number. The important thing is meaningful coverage of edge cases.
+
+
+42. Important DSA edge cases
+
+For Dijkstra test:
+
+Case 1
+
+Normal graph.
+
+A → B → C
+Case 2
+
+No path.
+
+A → B
+
+C → D
+Case 3
+
+Multiple paths.
+
+A → B → D
+A → C → D
+Case 4
+
+Direct route vs indirect rou
+
+
