@@ -54,6 +54,23 @@ autocannon(
 
 //// run server - 40 
 
+// Run your server:
+
+// npm start
+
+// Then:
+
+// npm run load
+
+// You'll get information such as:
+
+// Latency
+// Requests/sec
+// Throughput
+// 2xx responses
+// Errors
+
+
 
 
 
