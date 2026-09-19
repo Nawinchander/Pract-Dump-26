@@ -104,4 +104,25 @@ C = 5
 
 
 
+44. What you're actually demonstrating in an interview
+
+This project gives you several talking points.
+
+DSA
+
+You can explain:
+
+"I implemented Dijkstra using a binary min heap rather than using a linear scan for the minimum-distance node."
+
+Then:
+
+O((V + E) log V)
+
+instead of:
+
+O(V²)
+
+for the standard array-based approach.
+
+
 
