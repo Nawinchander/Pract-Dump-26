@@ -125,4 +125,27 @@ O(V²)
 for the standard array-based approach.
 
 
+Graph design
+
+You can explain:
+
+"The graph is represented using an adjacency list because sparse graphs are more memory efficient than adjacency matrices."
+
+Scheduling
+
+You can explain:
+
+"The scheduler uses Kahn's algorithm for topological ordering and detects circular dependencies by comparing the number of processed vertices with the total number of tasks."
+
+
+
+Critical path
+
+You can explain:
+
+"After topological ordering, I calculate the longest weighted path through the DAG to determine the minimum project completion time."
+
+
+
+
 
