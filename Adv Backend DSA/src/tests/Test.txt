@@ -169,6 +169,27 @@ Execution History
 
 Relationships:
 
+User
+ ↓
+Route Searches
+
+Project
+ ↓
+Tasks
+ ↓
+Execution History
+MongoDB
+
+Use for flexible/highly variable data:
+
+Traffic snapshots
+Dependency graph
+Route metadata
+Dynamic graph information
+
+This gives you a defensible polyglot-persistence architecture.
+
+
 
 
 
