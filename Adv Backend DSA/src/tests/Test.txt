@@ -147,5 +147,28 @@ You can explain:
 
 
 
+45. Why MongoDB + MySQL?
+
+This is an important interview question.
+
+Don't say:
+
+"I used both because I wanted to learn both."
+
+Instead:
+
+MySQL
+
+Use for strongly relational data:
+
+Users
+Projects
+Tasks
+Route Searches
+Execution History
+
+Relationships:
+
+
 
 
