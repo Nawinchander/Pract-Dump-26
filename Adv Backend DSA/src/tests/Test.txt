@@ -64,5 +64,44 @@ Invalid negative weight.
 
 Dijkstra should not accept negative weights.
 
+Scheduler edge cases
+
+Test:
+
+A → B
+A → B
+A → C
+B → D
+C → D
+
+Cycle:
+
+A → B
+B → C
+C → A
+
+Single task:
+
+A
+
+Disconnected tasks:
+
+A → B
+
+C → D
+
+
+Multiple critical paths:
+
+A → B → D
+A → C → D
+
+Same duration:
+
+A = 5
+B = 5
+C = 5
+
+
 
 
