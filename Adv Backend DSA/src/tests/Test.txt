@@ -50,4 +50,19 @@ Case 4
 
 Direct route vs indirect rou
 
+Case 5
+
+Large graph.
+
+Case 6
+
+Zero-weight edge.
+
+Case 7
+
+Invalid negative weight.
+
+Dijkstra should not accept negative weights.
+
+
 
