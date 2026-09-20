@@ -15,3 +15,36 @@ POST
 
 
 
+                     CLIENT
+                       │
+                       ▼
+                 EXPRESS API
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+             ▼                   ▼
+       Route Service       Scheduler Service
+             │                   │
+             ▼                   ▼
+        Dijkstra             Topological
+        + Min Heap            Sort
+             │                   │
+             ▼                   ▼
+         MongoDB              MongoDB
+             │                   │
+             └─────────┬─────────┘
+                       │
+                       ▼
+                    MySQL
+                       │
+              ┌────────┴────────┐
+              │                 │
+           Users            Projects
+              │                 │
+        Route Search          Tasks
+                                │
+                         Execution History
+
+
+
+
