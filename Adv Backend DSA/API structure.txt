@@ -103,7 +103,14 @@ At that point, this stops being just a DSA demo and becomes a credible Full Stac
 
 
 
+Yes. Both problems are intended to be part of the same overall backend project, not two completely separate projects.
 
+The structure I gave combines:
+
+Smart Route Optimizer → Dijkstra + Priority Queue
+Dependency Scheduler → Topological Sort + Critical Path
+
+into one Node.js + Express application.
 
 
 
