@@ -104,3 +104,97 @@ At that point, this stops being just a DSA demo and becomes a credible Full Stac
 
 
 
+
+
+
+advanced-dsa-backend/
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   │
+│   ├── config/
+│   │   ├── mysql.js
+│   │   └── mongo.js
+│   │
+│   ├── dsa/
+│   │   │
+│   │   ├── route-optimizer/
+│   │   │   ├── Graph.js
+│   │   │   ├── PriorityQueue.js
+│   │   │   └── dijkstra.js
+│   │   │
+│   │   └── dependency-scheduler/
+│   │       ├── topologicalSort.js
+│   │       └── criticalPath.js
+│   │
+│   ├── controllers/
+│   │   ├── route.controller.js
+│   │   └── scheduler.controller.js
+│   │
+│   ├── services/
+│   │   ├── route.service.js
+│   │   └── scheduler.service.js
+│   │
+│   ├── repositories/
+│   │   ├── route.repository.js
+│   │   ├── project.repository.js
+│   │   └── task.repository.js
+│   │
+│   ├── models/
+│   │   ├── mongo/
+│   │   │   ├── TrafficSnapshot.js
+│   │   │   └── DependencyGraph.js
+│   │   │
+│   │   └── mysql/
+│   │       ├── User.js
+│   │       ├── RouteSearch.js
+│   │       ├── Project.js
+│   │       └── Task.js
+│   │
+│   ├── routes/
+│   │   ├── route.routes.js
+│   │   └── scheduler.routes.js
+│   │
+│   └── middleware/
+│       └── error.middleware.js
+│
+├── tests/
+│   ├── unit/
+│   │   ├── dijkstra.test.js
+│   │   ├── priorityQueue.test.js
+│   │   ├── topologicalSort.test.js
+│   │   └── criticalPath.test.js
+│   │
+│   ├── integration/
+│   │   ├── route.integration.test.js
+│   │   └── scheduler.integration.test.js
+│   │
+│   ├── api/
+│   │   ├── route.api.test.js
+│   │   └── scheduler.api.test.js
+│   │
+│   ├── database/
+│   │   ├── mysql.test.js
+│   │   └── mongo.test.js
+│   │
+│   ├── e2e/
+│   │   └── workflow.e2e.test.js
+│   │
+│   └── performance/
+│       └── route.load.js
+│
+├── sql/
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── .env
+├── .env.test
+├── .gitignore
+├── package.json
+└── README.md
+
+
+
+
+
