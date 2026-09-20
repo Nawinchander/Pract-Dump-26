@@ -205,3 +205,29 @@ advanced-dsa-backend/
 
 
 
+Think of it like this
+              ADVANCED DSA BACKEND
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+          ▼                         ▼
+  SMART ROUTE OPTIMIZER      DEPENDENCY SCHEDULER
+          │                         │
+          ▼                         ▼
+     Dijkstra                 Topological Sort
+          │                         │
+     Priority Queue           Critical Path
+          │                         │
+          └────────────┬────────────┘
+                       │
+                       ▼
+                Express REST API
+                       │
+              ┌────────┴────────┐
+              ▼                 ▼
+           MySQL             MongoDB
+
+
+           
+
+
