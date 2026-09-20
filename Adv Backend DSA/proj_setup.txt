@@ -35,6 +35,35 @@ Phase 4 — Route API
 22. Save search to MySQL
 23. Save traffic information to MongoDB
 
+Phase 5 — Scheduler
+24. Implement Topological Sort
+25. Test cycle detection
+26. Implement Critical Path
+27. Test critical path
+28. Build scheduler service
+29. Controller
+30. API
+
+Phase 6 — Testing
+31. Unit tests
+32. Integration tests
+33. API tests
+34. MongoDB tests
+35. MySQL tests
+36. E2E tests
+37. Performance tests
+38. Coverage
+
+
+Phase 7 — Production improvements
+39. Validation
+40. Authentication
+41. Rate limiting
+42. Logging
+43. Redis caching
+44. Docker
+45. CI/CD
+46. AWS deployment
 
 
 
