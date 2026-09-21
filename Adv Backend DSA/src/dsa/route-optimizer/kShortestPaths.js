@@ -175,3 +175,7 @@ module.exports = findKShortestPaths;
 
 
 
+// Important: this is a learning/portfolio implementation. A production-grade K-shortest-path implementation would normally use Yen's algorithm or Eppstein's algorithm, with more careful candidate handling.
+
+// That gives you another interview discussion point.
+
