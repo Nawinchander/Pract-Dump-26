@@ -82,6 +82,29 @@ Response
 }
 
 
+API 4 — Dependency Impact Analysis
+
+For the second new API, we'll stay inside the project scheduling domain.
+
+Suppose:
+
+A → B → D
+A → C → D
+
+If A becomes delayed, which tasks are affected?
+
+The API will calculate:
+
+direct dependents
+all downstream dependents
+number of affected tasks
+affected task IDs
+
+This uses DFS/BFS graph traversal.
+
+Endpoint
+POST /api/scheduler/dependency-impact
+
 
 
 
