@@ -1,3 +1,26 @@
+API 3 — K Shortest Routes
+
+This extends your Dijkstra problem.
+
+Instead of:
+
+"Give me the shortest route from A to D."
+
+the API answers:
+
+"Give me the top 3 possible routes from A to D."
+
+For example:
+
+A → B → D       = 8
+A → C → D       = 10
+A → B → C → D   = 12
+
+This is useful for a logistics/ride-booking/navigation system because the client can display multiple alternatives.
+
+Endpoint
+
+
 POST /api/routes/alternatives
 
 
