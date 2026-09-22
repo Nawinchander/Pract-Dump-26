@@ -1,0 +1,13 @@
+Your four APIs
+
+You now have:
+
+#	API	Algorithm	Purpose
+1	/api/routes/shortest	Dijkstra + Min Heap	Find shortest route
+2	/api/scheduler/critical-path	Topological Sort + DAG	Find project completion path
+3	/api/routes/alternatives	K-shortest paths	Find alternative routes
+4	/api/scheduler/dependency-impact	BFS	Find tasks affected by a dependency
+
+This makes the project considerably more substantial.
+
+
