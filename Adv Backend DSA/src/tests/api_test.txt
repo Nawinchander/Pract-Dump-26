@@ -105,6 +105,74 @@ This uses DFS/BFS graph traversal.
 Endpoint
 POST /api/scheduler/dependency-impact
 
+{
+  "taskId": "A",
+  "tasks": [
+    {
+      "id": "A",
+      "duration": 3
+    },
+    {
+      "id": "B",
+      "duration": 5
+    },
+    {
+      "id": "C",
+      "duration": 2
+    },
+    {
+      "id": "D",
+      "duration": 4
+    },
+    {
+      "id": "E",
+      "duration": 6
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "A",
+      "to": "B"
+    },
+    {
+      "from": "A",
+      "to": "C"
+    },
+    {
+      "from": "B",
+      "to": "D"
+    },
+    {
+      "from": "C",
+      "to": "D"
+    },
+    {
+      "from": "D",
+      "to": "E"
+    }
+  ]
+}
+
+Response
+{
+  "success": true,
+  "data": {
+    "taskId": "A",
+    "affectedTasks": [
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "affectedCount": 4
+  }
+}
+
+
+/// 5. Dependency analysis algorithm
+
+
+
 
 
 
