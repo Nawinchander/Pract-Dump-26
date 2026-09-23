@@ -190,6 +190,38 @@ Dynamic graph information
 This gives you a defensible polyglot-persistence architecture.
 
 
+Testing matrix
+
+Now your project has a proper testing strategy:
+
+
+                    TESTING
+                       │
+       ┌───────────────┼────────────────┐
+       │               │                │
+       ▼               ▼                ▼
+      UNIT        INTEGRATION          API
+       │               │                │
+       ▼               ▼                ▼
+  Dijkstra       Service + DB       HTTP/JSON
+  Min Heap       Repository         Status codes
+  Topological    MongoDB            Validation
+  Critical Path  MySQL
+  K Shortest
+  BFS
+       │
+       └────────────────┬───────────────
+                        │
+                        ▼
+                       E2E
+                        │
+                        ▼
+                  Full workflow
+                        │
+                        ▼
+                   Performance
+
+
 
 
 
