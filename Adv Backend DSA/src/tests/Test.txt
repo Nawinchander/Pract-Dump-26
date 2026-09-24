@@ -239,6 +239,21 @@ POST /api/scheduler/critical-path
 POST /api/scheduler/dependency-impact
 
 
+Integration tests
+
+Test:
+
+Controller
+   ↓
+Service
+   ↓
+DSA
+   ↓
+Repository
+   ↓
+MySQL/MongoDB
+
+
 
 
 
