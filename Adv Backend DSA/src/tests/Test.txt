@@ -222,6 +222,27 @@ Now your project has a proper testing strategy:
                    Performance
 
 
+Unit tests
+
+PriorityQueue
+Dijkstra
+Topological Sort
+Critical Path
+K Shortest Paths
+Dependency Analysis
+
+API tests
+
+POST /api/routes/shortest
+POST /api/routes/alternatives
+POST /api/scheduler/critical-path
+POST /api/scheduler/dependency-impact
+
+
+
+
+
+
 
 
 
