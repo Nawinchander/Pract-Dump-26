@@ -267,7 +267,26 @@ MongoDB
  └── dependency_graphs
 
 
- 
+ E2E
+
+Example:
+
+Create project
+     ↓
+Create tasks
+     ↓
+Create dependencies
+     ↓
+Calculate critical path
+     ↓
+Find dependency impact
+     ↓
+Store execution history
+     ↓
+Verify result
+
+
+
 
 
 
