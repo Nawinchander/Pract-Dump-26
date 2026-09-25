@@ -91,6 +91,14 @@ module.exports = floydWarshall;
 
 
 
+// Complexity
+// Time:  O(V³)
+
+// Space: O(V²)
+
+// This is a good interview discussion because you can explain when Dijkstra is preferable and when Floyd-Warshall makes sense.
+
+
 
 
 
