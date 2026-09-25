@@ -228,6 +228,24 @@ Think of it like this
            MySQL             MongoDB
 
 
-           
+
+
+
+es. At this point, I would not add two basic CRUD APIs. To keep the project genuinely advanced, add two APIs that build on the existing DSA/backend architecture.
+
+You will now have 6 APIs:
+
+#	API	Main DSA / Backend concept
+1	Shortest Route	Dijkstra + Min Heap
+2	Critical Path	Topological Sort + DAG
+3	Alternative Routes	K-Shortest Paths
+4	Dependency Impact	BFS
+5	Route Network Analysis	Floyd-Warshall
+6	Task Priority Planner	Max Heap / Priority Queue
+
+Below is the updated architecture and the code for API 5 and API 6, including tests.
+
+
+
 
 
