@@ -247,5 +247,49 @@ Below is the updated architecture and the code for API 5 and API 6, including te
 
 
 
+                    ┌─────────────────────────┐
+                    │        CLIENT           │
+                    │ React / Vue / Postman   │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      EXPRESS SERVER     │
+                    │     REST API Layer      │
+                    └────────────┬────────────┘
+                                 │
+              ┌──────────────────┼──────────────────┐
+              │                  │                  │
+              ▼                  ▼                  ▼
+        Route APIs        Scheduler APIs       Health/API
+              │                  │
+              ▼                  ▼
+       Route Service       Scheduler Service
+              │                  │
+       ┌──────┴──────┐    ┌──────┴────────┐
+       │             │    │               │
+       ▼             ▼    ▼               ▼
+    Dijkstra     Floyd-  Topological    Dependency
+    K-Shortest   Warshall Sort          Analysis
+                     │
+                     ▼
+                 Task Priority
+                   Max Heap
+       │                                  │
+       └──────────────┬───────────────────┘
+                      │
+             ┌────────┴─────────┐
+             │                  │
+             ▼                  ▼
+        ┌──────────┐       ┌──────────┐
+        │  MySQL   │       │ MongoDB  │
+        └──────────┘       └──────────┘
+             │                  │
+       Users / Projects     Traffic
+       Tasks / History      Graphs
+       Route Searches       Snapshots
+
+
+
 
 
