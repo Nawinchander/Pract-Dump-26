@@ -291,5 +291,154 @@ Below is the updated architecture and the code for API 5 and API 6, including te
 
 
 
+Final folder architecture
+
+
+
+advanced-dsa-backend/
+│
+├── src/
+│   │
+│   ├── app.js
+│   ├── server.js
+│   │
+│   ├── config/
+│   │   ├── env.js
+│   │   ├── mysql.js
+│   │   └── mongo.js
+│   │
+│   ├── dsa/
+│   │
+│   │   ├── route-optimizer/
+│   │   │   ├── Graph.js
+│   │   │   ├── PriorityQueue.js
+│   │   │   ├── dijkstra.js
+│   │   │   ├── kShortestPaths.js
+│   │   │   └── floydWarshall.js          NEW
+│   │   │
+│   │   └── dependency-scheduler/
+│   │       ├── topologicalSort.js
+│   │       ├── criticalPath.js
+│   │       ├── dependencyAnalysis.js
+│   │       └── taskPriorityQueue.js      NEW
+│   │
+│   ├── controllers/
+│   │   ├── route.controller.js
+│   │   └── scheduler.controller.js
+│   │
+│   ├── services/
+│   │   ├── route.service.js
+│   │   └── scheduler.service.js
+│   │
+│   ├── repositories/
+│   │   ├── route.repository.js
+│   │   ├── project.repository.js
+│   │   └── task.repository.js
+│   │
+│   ├── models/
+│   │   ├── mongo/
+│   │   │   ├── TrafficSnapshot.js
+│   │   │   └── DependencyGraph.js
+│   │   │
+│   │   └── mysql/
+│   │       ├── User.js
+│   │       ├── RouteSearch.js
+│   │       ├── Project.js
+│   │       └── Task.js
+│   │
+│   ├── routes/
+│   │   ├── route.routes.js
+│   │   └── scheduler.routes.js
+│   │
+│   ├── validators/
+│   │   ├── route.validator.js
+│   │   └── scheduler.validator.js
+│   │
+│   └── middleware/
+│       ├── error.middleware.js
+│       ├── validation.middleware.js
+│       └── requestId.middleware.js
+│
+├── tests/
+│   │
+│   ├── unit/
+│   │   ├── priorityQueue.test.js
+│   │   ├── dijkstra.test.js
+│   │   ├── kShortestPaths.test.js
+│   │   ├── floydWarshall.test.js          NEW
+│   │   ├── topologicalSort.test.js
+│   │   ├── criticalPath.test.js
+│   │   ├── dependencyAnalysis.test.js
+│   │   └── taskPriorityQueue.test.js      NEW
+│   │
+│   ├── integration/
+│   │   ├── route.integration.test.js
+│   │   ├── scheduler.integration.test.js
+│   │   ├── network.integration.test.js   NEW
+│   │   └── priority.integration.test.js  NEW
+│   │
+│   ├── api/
+│   │   ├── route.api.test.js
+│   │   ├── route-alternatives.api.test.js
+│   │   ├── network-analysis.api.test.js  NEW
+│   │   ├── scheduler.api.test.js
+│   │   ├── dependency-impact.api.test.js
+│   │   └── task-priority.api.test.js     NEW
+│   │
+│   ├── database/
+│   │   ├── mysql.test.js
+│   │   └── mongo.test.js
+│   │
+│   ├── e2e/
+│   │   └── workflow.e2e.test.js
+│   │
+│   └── performance/
+│       ├── route.load.js
+│       └── network.load.js
+│
+├── sql/
+│   ├── schema.sql
+│   └── seed.sql
+│
+├── .env
+├── .env.test
+├── .gitignore
+├── package.json
+└── README.md
+
+
+
+
+API 5 — Route Network Analysis
+
+This API answers:
+
+"What is the shortest distance between every pair of locations in the network?"
+
+This is different from Dijkstra.
+
+Dijkstra:
+
+A → D
+
+Floyd-Warshall:
+
+A → B
+A → C
+A → D
+
+B → A
+B → C
+B → D
+
+C → A
+C → B
+C → D
+...
+
+So it is useful when your logistics system needs a complete shortest-distance matrix.
+
+
+
 
 
