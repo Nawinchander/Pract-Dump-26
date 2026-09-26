@@ -33,3 +33,47 @@ router.post(
 
 //// POST /api/routes/network-analysis
 
+
+
+
+// {
+//     "nodes": [
+//         "A",
+//         "B",
+//         "C",
+//         "D"
+//     ],
+//     "edges": [
+//         {
+//             "source": "A",
+//             "destination": "B",
+//             "weight": 5
+//         },
+//         {
+//             "source": "A",
+//             "destination": "C",
+//             "weight": 10
+//         },
+//         {
+//             "source": "B",
+//             "destination": "C",
+//             "weight": 3
+//         },
+//         {
+//             "source": "B",
+//             "destination": "D",
+//             "weight": 8
+//         },
+//         {
+//             "source": "C",
+//             "destination": "D",
+//             "weight": 2
+//         }
+//     ]
+// }
+
+
+
+
+
+
