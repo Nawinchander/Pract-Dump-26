@@ -34,6 +34,14 @@ async function analyzeNetwork(data) {
 }
 
 
+// Update your export:
+
+module.exports = {
+    findShortestRoute,
+    findAlternativeRoutes,
+    analyzeNetwork
+};
+
 // const Graph =
 //     require("../dsa/route-optimizer/Graph");
 

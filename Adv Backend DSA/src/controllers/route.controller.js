@@ -1,23 +1,56 @@
-const express = require("express");
-
 const {
+    analyzeNetwork
+} = require("../services/route.service");
+
+async function networkAnalysis(
+    req,
+    res,
+    next
+) {
+    try {
+
+        const result =
+            await analyzeNetwork(
+                req.body
+            );
+
+        res.status(200).json({
+            success: true,
+            data: result
+        });
+
+    } catch (error) {
+        next(error);
+    }
+}
+
+module.exports = {
     shortestRoute,
-    alternativeRoutes
-} = require("../controllers/route.controller");
+    alternativeRoutes,
+    networkAnalysis
+};
 
-const router = express.Router();
 
-router.post(
-    "/shortest",
-    shortestRoute
-);
+// const express = require("express");
 
-router.post(
-    "/alternatives",
-    alternativeRoutes
-);
+// const {
+//     shortestRoute,
+//     alternativeRoutes
+// } = require("../controllers/route.controller");
 
-module.exports = router;
+// const router = express.Router();
+
+// router.post(
+//     "/shortest",
+//     shortestRoute
+// );
+
+// router.post(
+//     "/alternatives",
+//     alternativeRoutes
+// );
+
+// module.exports = router;
 
 
 
