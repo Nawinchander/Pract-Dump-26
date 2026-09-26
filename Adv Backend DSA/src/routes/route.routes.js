@@ -15,4 +15,21 @@ module.exports = router;
 
 
 
+router.post(
+    "/shortest",
+    shortestRoute
+);
+
+router.post(
+    "/alternatives",
+    alternativeRoutes
+);
+
+router.post(
+    "/network-analysis",
+    networkAnalysis
+);
+
+
+//// POST /api/routes/network-analysis
 
