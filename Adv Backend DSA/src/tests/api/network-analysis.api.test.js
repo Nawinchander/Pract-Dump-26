@@ -77,6 +77,26 @@ describe(
 // 9 api test - 6 Task Priority Planner
 
 
+// API 6 — Task Priority Planner
+
+// Now let's improve the Dependency Scheduler.
+
+// Suppose your system has 10 tasks.
+
+// Each task has:
+
+// priority
+// duration
+// deadline
+// dependency count
+
+// The API determines which task should be handled first.
+
+// We'll use a Max Heap.
+
+// The highest priority task is returned first.
+
+
 
 
 
