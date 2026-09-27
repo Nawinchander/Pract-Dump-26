@@ -36,6 +36,21 @@ router.post(
     dependencyImpact
 );
 
+router.post(
+    "/critical-path",
+    schedule
+);
+
+router.post(
+    "/dependency-impact",
+    dependencyImpact
+);
+
+router.post(
+    "/task-priority",
+    taskPriority
+);
+
 module.exports = router;
 
 
