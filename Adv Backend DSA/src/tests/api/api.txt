@@ -11,3 +11,71 @@ You now have:
 This makes the project considerably more substantial.
 
 
+POST /api/scheduler/task-priority
+
+
+API - 6 Request
+
+{
+    "tasks": [
+        {
+            "id": "TASK-001",
+            "name": "Fix payment bug",
+            "priority": 10,
+            "duration": 3
+        },
+        {
+            "id": "TASK-002",
+            "name": "Update dashboard",
+            "priority": 5,
+            "duration": 8
+        },
+        {
+            "id": "TASK-003",
+            "name": "Optimize database",
+            "priority": 8,
+            "duration": 5
+        },
+        {
+            "id": "TASK-004",
+            "name": "Update documentation",
+            "priority": 2,
+            "duration": 2
+        }
+    ]
+}
+
+
+
+{
+    "success": true,
+    "data": {
+        "tasks": [
+            {
+                "id": "TASK-001",
+                "name": "Fix payment bug",
+                "priority": 10,
+                "duration": 3
+            },
+            {
+                "id": "TASK-003",
+                "name": "Optimize database",
+                "priority": 8,
+                "duration": 5
+            },
+            {
+                "id": "TASK-002",
+                "name": "Update dashboard",
+                "priority": 5,
+                "duration": 8
+            },
+            {
+                "id": "TASK-004",
+                "name": "Update documentation",
+                "priority": 2,
+                "duration": 2
+            }
+        ]
+    }
+}
+
