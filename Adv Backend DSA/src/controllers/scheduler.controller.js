@@ -1,5 +1,34 @@
 // /// 24
 
+
+const {
+    prioritizeTasks
+} = require("../services/scheduler.service");
+
+async function taskPriority(
+    req,
+    res,
+    next
+) {
+    try {
+
+        const result =
+            await prioritizeTasks(
+                req.body.tasks
+            );
+
+        res.status(200).json({
+            success: true,
+            data: {
+                tasks: result
+            }
+        });
+
+    } catch (error) {
+        next(error);
+    }
+}
+
 const {
     analyzeDependencyImpact
 } = require("../services/scheduler.service");

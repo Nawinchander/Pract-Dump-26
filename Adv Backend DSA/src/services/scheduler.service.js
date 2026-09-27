@@ -25,6 +25,11 @@ async function prioritizeTasks(tasks) {
     return orderedTasks;
 }
 
+module.exports = {
+    calculateSchedule,
+    analyzeDependencyImpact,
+    prioritizeTasks
+};
 
 // // const criticalPath =
 // //     require("../dsa/scheduler/criticalPath");
