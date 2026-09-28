@@ -108,3 +108,39 @@ That name also lets you connect the two seemingly different DSA problems into on
 
 
 
+
+
+
+                         TEST SUITE
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+          ▼                  ▼                  ▼
+      UNIT TESTS       INTEGRATION TESTS    API TESTS
+          │                  │                  │
+          │                  │                  │
+     ┌────┴────┐        Service + DSA       HTTP
+     │         │        + Repository       Request
+     ▼         ▼        + Database         Response
+   DSA      Utilities
+     │
+     ├── Dijkstra
+     ├── Priority Queue
+     ├── K-Shortest
+     ├── Floyd-Warshall
+     ├── Topological Sort
+     ├── Critical Path
+     ├── BFS
+     └── Max Heap
+                             │
+                             ▼
+                         E2E TESTS
+                             │
+                             ▼
+                     COMPLETE WORKFLOW
+                             │
+                             ▼
+                      PERFORMANCE TEST
+
+
+                      
