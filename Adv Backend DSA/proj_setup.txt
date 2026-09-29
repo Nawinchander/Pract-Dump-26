@@ -221,6 +221,27 @@ Keep MySQL + MongoDB in the same system, but give them different responsibilitie
           Route Searches
 
 
+MySQL
+
+Use for:
+
+users
+projects
+tasks
+route_searches
+task_execution_history
+MongoDB
+
+Use for:
+
+traffic_snapshots
+dependency_graphs
+dynamic route metadata
+
+This is a good polyglot persistence discussion for an interview.
+
+
+
 
 
 
