@@ -242,6 +242,19 @@ This is a good polyglot persistence discussion for an interview.
 
 
 
+22. Final API list
+┌────┬────────────────────────────────────────┬─────────────────────────┐
+│ #  │ Endpoint                               │ Algorithm               │
+├────┼────────────────────────────────────────┼─────────────────────────┤
+│ 1  │ POST /api/routes/shortest              │ Dijkstra + Min Heap     │
+│ 2  │ POST /api/scheduler/critical-path      │ Topological + DAG       │
+│ 3  │ POST /api/routes/alternatives          │ K-Shortest Paths        │
+│ 4  │ POST /api/scheduler/dependency-impact  │ BFS                     │
+│ 5  │ POST /api/routes/network-analysis      │ Floyd-Warshall          │
+│ 6  │ POST /api/scheduler/task-priority      │ Max Heap                │
+└────┴────────────────────────────────────────┴─────────────────────────┘
+
+
 
 
 
