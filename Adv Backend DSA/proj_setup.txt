@@ -255,6 +255,26 @@ This is a good polyglot persistence discussion for an interview.
 └────┴────────────────────────────────────────┴─────────────────────────┘
 
 
+And your testing covers:
+
+6 DSA modules
+        ↓
+Unit tests
+        ↓
+Service integration tests
+        ↓
+HTTP API tests
+        ↓
+MySQL tests
+        ↓
+MongoDB tests
+        ↓
+E2E tests
+        ↓
+Load/performance tests
+
+
+
 
 
 
