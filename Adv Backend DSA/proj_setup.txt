@@ -143,4 +143,34 @@ That name also lets you connect the two seemingly different DSA problems into on
                       PERFORMANCE TEST
 
 
-                      
+
+
+
+                         CLIENT
+                           │
+                           ▼
+                     EXPRESS SERVER
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+       ROUTE CONTROLLER          SCHEDULER CONTROLLER
+             │                           │
+             ▼                           ▼
+       ROUTE SERVICE             SCHEDULER SERVICE
+             │                           │
+      ┌──────┼──────────┐          ┌─────┼──────────────┐
+      │      │          │          │     │              │
+      ▼      ▼          ▼          ▼     ▼              ▼
+   Dijkstra K-Shortest Floyd     Topo  Critical       BFS
+             Paths      Warshall  Sort   Path
+                                                         
+                                                         
+                              Max Heap
+                                 ▲
+                                 │
+                         Task Priority API
+
+
+
+         
