@@ -172,5 +172,18 @@ That name also lets you connect the two seemingly different DSA problems into on
                          Task Priority API
 
 
+Route side
+POST /api/routes/shortest
+        ↓
+Dijkstra + Priority Queue
+POST /api/routes/alternatives
+        ↓
+K-Shortest Paths
+POST /api/routes/network-analysis
+        ↓
+Floyd-Warshall
+
+
+
 
          
