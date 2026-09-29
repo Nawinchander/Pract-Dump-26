@@ -198,5 +198,30 @@ Max Heap / Priority Queue
 
 
 
+21. Database architecture
+
+Keep MySQL + MongoDB in the same system, but give them different responsibilities.
+
+
+
+                         APPLICATION
+                             │
+                ┌────────────┴────────────┐
+                │                         │
+                ▼                         ▼
+             MySQL                    MongoDB
+                │                         │
+        ┌───────┼────────┐         ┌──────┼──────────┐
+        │       │        │         │                 │
+       User   Project   Tasks    Traffic         Dependency
+                │                Snapshots           Graph
+                │
+          Execution History
+                │
+          Route Searches
+
+
+
+
 
          
