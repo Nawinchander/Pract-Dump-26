@@ -185,5 +185,18 @@ Floyd-Warshall
 
 
 
+Scheduler side
+POST /api/scheduler/critical-path
+        ↓
+Topological Sort + Critical Path
+POST /api/scheduler/dependency-impact
+        ↓
+BFS Dependency Traversal
+POST /api/scheduler/task-priority
+        ↓
+Max Heap / Priority Queue
+
+
+
 
          
