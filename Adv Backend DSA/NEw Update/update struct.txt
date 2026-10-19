@@ -1,0 +1,49 @@
+Updated project architecture
+Client layer
+
+React / Vue / Postman
+
+
+Express.js REST API
+
+Routes · Validation · Error handling
+
+
+Route optimizer
+
+Dijkstra
+
+K-shortest paths
+
+Floyd–Warshall
+
+Union-Find
+
+Route reliability
+
+
+Dependency scheduler
+
+Topological sort
+
+Critical path
+
+Dependency BFS
+
+Max heap
+
+Resource allocation
+
+
+
+
+Service → Repository → Database
+MySQL
+MongoDB
+
+
+Testing
+
+Unit · API · Integration · E2E · Performance
+
+
