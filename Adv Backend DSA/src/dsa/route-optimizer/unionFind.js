@@ -78,3 +78,8 @@ function analyzeConnectivity(nodes, edges, source, destination) {
 module.exports = { UnionFind, analyzeConnectivity };
 
 
+
+
+// For example, if you export an object of functions, append checkConnectivity to that object. Don't replace the existing exports.
+
+

@@ -1,34 +1,54 @@
-const {
-    analyzeNetwork
-} = require("../services/route.service");
+const routeService = require("../services/route.service");
 
-async function networkAnalysis(
-    req,
-    res,
-    next
-) {
-    try {
+async function connectivity(req, res, next) {
+  try {
+    const data = await routeService.checkConnectivity(req.body);
 
-        const result =
-            await analyzeNetwork(
-                req.body
-            );
-
-        res.status(200).json({
-            success: true,
-            data: result
-        });
-
-    } catch (error) {
-        next(error);
-    }
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    next(error);
+  }
 }
 
-module.exports = {
-    shortestRoute,
-    alternativeRoutes,
-    networkAnalysis
-};
+module.exports = { connectivity };   // Preserve all existing controller exports.
+
+
+
+
+// const {
+//     analyzeNetwork
+// } = require("../services/route.service");
+
+// async function networkAnalysis(
+//     req,
+//     res,
+//     next
+// ) {
+//     try {
+
+//         const result =
+//             await analyzeNetwork(
+//                 req.body
+//             );
+
+//         res.status(200).json({
+//             success: true,
+//             data: result
+//         });
+
+//     } catch (error) {
+//         next(error);
+//     }
+// }
+
+// module.exports = {
+//     shortestRoute,
+//     alternativeRoutes,
+//     networkAnalysis
+// };
 
 
 // const express = require("express");
