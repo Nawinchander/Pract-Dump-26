@@ -1,0 +1,11 @@
+If your project already has a package.json, merge the scripts rather than replacing your dependencies. Ensure the project uses CommonJS (require/module.exports) consistently with the code below.
+
+
+3. API 7 — Network Connectivity using Union-Find
+Endpoint: POST /api/routes/connectivity
+
+This API determines whether two locations are connected and returns all connected components. It uses the Disjoint Set Union (DSU) algorithm with path compression and union by rank.
+
+
+
+
