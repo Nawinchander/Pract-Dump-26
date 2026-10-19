@@ -1,3 +1,17 @@
+We’ll extend your existing Advanced DSA Backend from 6 APIs to 10 APIs total, keeping everything in one Node.js + Express.js project with MongoDB, MySQL, and automated backend testing.
+
+The four new APIs will add four different algorithms and practical backend use cases:
+New API	Algorithm / concept	Purpose
+7. Network Connectivity	Union-Find (Disjoint Set Union)	Find connected components and check whether locations are connected
+8. Task Execution Order	Kahn’s Algorithm + Topological Sort	Return a valid task execution order and detect dependency cycles
+9. Resource Allocation	Greedy Algorithm + Min Heap	Assign jobs to available workers and minimize total completion time
+10. Route Reliability	Modified Dijkstra + Max Heap	Find the most reliable route using edge success probabilities
+These additions fit the existing route-optimizer and dependency-scheduler modules. We’ll also add unit tests, API tests, and integration tests for the new functionality.
+
+
+
+
+
 Updated project architecture
 Client layer
 
