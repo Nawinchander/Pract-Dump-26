@@ -47,3 +47,57 @@ Testing
 Unit · API · Integration · E2E · Performance
 
 
+advanced-dsa-backend/
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── config/
+│   │   ├── mysql.js
+│   │   └── mongo.js
+│   ├── dsa/
+│   │   ├── route-optimizer/
+│   │   │   ├── Graph.js
+│   │   │   ├── PriorityQueue.js
+│   │   │   ├── dijkstra.js
+│   │   │   ├── kShortestPaths.js
+│   │   │   ├── floydWarshall.js
+│   │   │   ├── unionFind.js                 *
+│   │   │   └── reliablePath.js              *
+│   │   └── dependency-scheduler/
+│   │       ├── topologicalSort.js
+│   │       ├── criticalPath.js
+│   │       ├── dependencyAnalysis.js
+│   │       ├── taskPriorityQueue.js
+│   │       ├── taskExecutionOrder.js        *
+│   │       └── resourceAllocator.js          *
+│   ├── services/
+│   │   ├── route.service.js
+│   │   └── scheduler.service.js
+│   ├── controllers/
+│   │   ├── route.controller.js
+│   │   └── scheduler.controller.js
+│   ├── routes/
+│   │   ├── route.routes.js
+│   │   └── scheduler.routes.js
+│   └── middleware/
+│       └── error.middleware.js
+├── tests/
+│   ├── unit/
+│   │   ├── unionFind.test.js                 *
+│   │   ├── reliablePath.test.js              *
+│   │   ├── taskExecutionOrder.test.js        *
+│   │   └── resourceAllocator.test.js         *
+│   ├── api/
+│   │   ├── connectivity.api.test.js          *
+│   │   ├── reliable-path.api.test.js         *
+│   │   ├── execution-order.api.test.js       *
+│   │   └── resource-allocation.api.test.js    *
+│   └── integration/
+│       └── advanced-dsa.integration.test.js  *
+├── package.json
+├── .env
+└── README.md
+
+
+
+
