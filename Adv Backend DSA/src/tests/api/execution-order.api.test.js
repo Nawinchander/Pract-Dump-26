@@ -37,4 +37,9 @@ describe("POST /api/scheduler/execution-order", () => {
 
 
 
+// This second test assumes your shared error middleware maps algorithm/input errors to HTTP 400 and responds with { "success": false, "message": "..." }. If your middleware uses a different error format, adjust the assertions accordingly.
+
+
+
+
 
