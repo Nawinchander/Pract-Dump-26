@@ -92,4 +92,26 @@ module.exports = { UnionFind, analyzeConnectivity };
 // response
 
 
+// {
+//   "nodes": ["A", "B", "C", "D", "E"],
+//   "edges": [
+//     { "source": "A", "destination": "B" },
+//     { "source": "B", "destination": "C" },
+//     { "source": "D", "destination": "E" }
+//   ],
+//   "source": "A",
+//   "destination": "C"
+// }
 
+/// json
+
+// {
+//   "success": true,
+//   "data": {
+//     "connected": true,
+//     "components": [
+//       ["A", "B", "C"],
+//       ["D", "E"]
+//     ]
+//   }
+// }
