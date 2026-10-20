@@ -1,5 +1,27 @@
 // /// 24
 
+const schedulerService =
+  require("../services/scheduler.service");
+
+async function executionOrder(req, res, next) {
+  try {
+    const data =
+      await schedulerService.calculateExecutionOrder(req.body);
+
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+// Add executionOrder to your existing controller exports.
+module.exports = {
+  // Preserve existing exports here.
+  executionOrder
+};
 
 const {
     prioritizeTasks
