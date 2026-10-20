@@ -1,35 +1,48 @@
-const TaskPriorityQueue =
-    require(
-        "../dsa/dependency-scheduler/taskPriorityQueue"
-    );
+const {
+  getExecutionOrder
+} = require("../dsa/dependency-scheduler/taskExecutionOrder");
 
-async function prioritizeTasks(tasks) {
-
-    const queue =
-        new TaskPriorityQueue();
-
-    for (const task of tasks) {
-
-        queue.enqueue(task);
-    }
-
-    const orderedTasks = [];
-
-    while (!queue.isEmpty()) {
-
-        orderedTasks.push(
-            queue.dequeue()
-        );
-    }
-
-    return orderedTasks;
+async function calculateExecutionOrder(data) {
+  return {
+    executionOrder: getExecutionOrder(
+      data.tasks,
+      data.dependencies
+    )
+  };
 }
 
-module.exports = {
-    calculateSchedule,
-    analyzeDependencyImpact,
-    prioritizeTasks
-};
+// Add calculateExecutionOrder to the existing module.exports.
+
+
+
+// const TaskPriorityQueue =
+//     require(
+//         "../dsa/dependency-scheduler/taskPriorityQueue"
+//     );
+
+// async function prioritizeTasks(tasks) {
+
+//     const queue =
+//         new TaskPriorityQueue();
+
+//     for (const task of tasks) {
+
+//         queue.enqueue(task);
+//     }
+
+//     const orderedTasks = [];
+
+//     while (!queue.isEmpty()) {
+
+//         orderedTasks.push(
+//             queue.dequeue()
+//         );
+//     }
+
+//     return orderedTasks;
+// }
+
+// module.exports = { calculateSchedule, analyzeDependencyImpact, prioritizeTasks };
 
 // // const criticalPath =
 // //     require("../dsa/scheduler/criticalPath");
