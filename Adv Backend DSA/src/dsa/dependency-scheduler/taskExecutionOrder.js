@@ -49,3 +49,26 @@ module.exports = { getExecutionOrder };
 
 
 
+// endpoint - POST /api/scheduler/execution-order
+
+
+
+// {
+//   "tasks": [
+//     { "id": "A" },
+//     { "id": "B" },
+//     { "id": "C" },
+//     { "id": "D" }
+//   ],
+//   "dependencies": [
+//     { "from": "A", "to": "B" },
+//     { "from": "A", "to": "C" },
+//     { "from": "B", "to": "D" },
+//     { "from": "C", "to": "D" }
+//   ]
+// }
+
+
+
+
+
