@@ -51,6 +51,10 @@ router.post(
     taskPriority
 );
 
+const {executionOrder} = require("../controllers/scheduler.controller");
+
+router.post("/execution-order", executionOrder);
+
 module.exports = router;
 
 
