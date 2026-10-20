@@ -20,3 +20,10 @@ describe("POST /api/routes/connectivity", () => {
   });
 });
 
+
+
+
+// 4. API 8 — Task Execution Order using Kahn’s Algorithm
+// Endpoint: POST /api/scheduler/execution-order
+
+// This API determines a valid order in which tasks can execute based on their dependencies. If tasks contain a dependency cycle, the API reports the cycle rather than returning an invalid order.
