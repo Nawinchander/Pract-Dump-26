@@ -1,34 +1,22 @@
 const express = require("express");
 
-const {
-    shortestRoute
-} = require("../controllers/route.controller");
+const {shortestRoute} = require("../controllers/route.controller");
 
 const router = express.Router();
 
-router.post(
-    "/shortest",
-    shortestRoute
-);
+const { connectivity } = require("../controllers/route.controller");
+
+router.post("/connectivity", connectivity);
+
+router.post("/shortest",shortestRoute);
 
 module.exports = router;
 
+router.post("/shortest",shortestRoute);
 
+router.post("/alternatives",alternativeRoutes );
 
-router.post(
-    "/shortest",
-    shortestRoute
-);
-
-router.post(
-    "/alternatives",
-    alternativeRoutes
-);
-
-router.post(
-    "/network-analysis",
-    networkAnalysis
-);
+router.post( "/network-analysis", networkAnalysis);
 
 
 //// POST /api/routes/network-analysis
