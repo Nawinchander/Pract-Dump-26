@@ -142,8 +142,33 @@ module.exports = { MinHeap, allocateResources };
 
 /// - next part
 
-Service: src/services/scheduler.service.js
-Add this function to your existing service:
+// Service: src/services/scheduler.service.js
+// Add this function to your existing service:
+
+// {
+//   "workerCount": 2,
+//   "tasks": [
+//     { "id": "JOB-1", "duration": 4 },
+//     { "id": "JOB-2", "duration": 3 },
+//     { "id": "JOB-3", "duration": 2 },
+//     { "id": "JOB-4", "duration": 5 }
+//   ]
+// }
+
+
+// {
+//   "success": true,
+//   "data": {
+//     "assignments": [
+//       { "taskId": "JOB-1", "workerId": "W1", "start": 0, "finish": 4 },
+//       { "taskId": "JOB-2", "workerId": "W2", "start": 0, "finish": 3 },
+//       { "taskId": "JOB-3", "workerId": "W2", "start": 3, "finish": 5 },
+//       { "taskId": "JOB-4", "workerId": "W1", "start": 4, "finish": 9 }
+//     ],
+//     "totalCompletionTime": 9
+//   }
+// }
+
 
 
 
