@@ -170,6 +170,9 @@ module.exports = { MinHeap, allocateResources };
 // }
 
 
+// Important: This is a greedy list scheduler, not a globally optimal solution to every job-scheduling problem. It assumes jobs are processed in the input order, jobs cannot be interrupted, and workers are interchangeable.
+
+// Complexity: \(O(W+N\log W)\) time and \(O(W+N)\) space, where \(W\) is the worker count and \(N\) is the number of tasks.
 
 
 
