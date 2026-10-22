@@ -21,4 +21,19 @@ describe("POST /api/scheduler/resource-allocation", () => {
   });
 
 
-  
+  test("rejects invalid worker count", async () => {
+    const response = await request(app)
+      .post("/api/scheduler/resource-allocation")
+      .send({
+        workerCount: 0,
+        tasks: [{ id: "A", duration: 2 }]
+      });
+
+    expect(response.status).toBe(400);
+    expect(response.body.success).toBe(false);
+  });
+});
+
+
+
+
