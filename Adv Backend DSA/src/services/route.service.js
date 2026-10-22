@@ -36,11 +36,20 @@ async function analyzeNetwork(data) {
 
 // Update your export:
 
-module.exports = {
-    findShortestRoute,
-    findAlternativeRoutes,
-    analyzeNetwork
-};
+module.exports = { findShortestRoute, findAlternativeRoutes, analyzeNetwork };
+
+
+const { findReliablePath } = require("../dsa/route-optimizer/reliablePath");
+
+async function calculateReliablePath(data) {
+  return findReliablePath(
+    data.nodes,
+    data.edges,
+    data.source,
+    data.destination
+  );
+}
+
 
 // const Graph =
 //     require("../dsa/route-optimizer/Graph");
