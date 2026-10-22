@@ -35,5 +35,7 @@ describe("POST /api/scheduler/resource-allocation", () => {
 });
 
 
+// As with the previous API, the invalid-input test expects the shared error middleware to return HTTP 400.
+
 
 
