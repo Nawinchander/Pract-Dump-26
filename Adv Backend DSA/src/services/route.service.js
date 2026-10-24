@@ -48,6 +48,25 @@ async function calculateReliablePath(data) {
 }
 
 
+const routeService = require("../services/route.service");
+
+async function reliablePath(req, res, next) {
+  try {
+    const data =
+      await routeService.calculateReliablePath(req.body);
+
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+// Add reliablePath to the existing controller exports.
+
+
 
 
 // const Graph =
