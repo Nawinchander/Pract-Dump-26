@@ -21,7 +21,9 @@ router.post( "/network-analysis", networkAnalysis);
 
 //// POST /api/routes/network-analysis
 
+const { reliablePath } = require("../controllers/route.controller");
 
+router.post("/reliable-path", reliablePath);
 
 
 // {
