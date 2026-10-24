@@ -181,6 +181,18 @@ module.exports = { MaxHeap, findReliablePath };
 
 
 
+{
+  "nodes": ["A", "B", "C", "D"],
+  "source": "A",
+  "destination": "D",
+  "edges": [
+    { "source": "A", "destination": "B", "probability": 0.9 },
+    { "source": "B", "destination": "D", "probability": 0.9 },
+    { "source": "A", "destination": "C", "probability": 0.95 },
+    { "source": "C", "destination": "D", "probability": 0.8 }
+  ]
+}
+
 
 
 
