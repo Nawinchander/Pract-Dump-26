@@ -42,3 +42,9 @@ describe("POST /api/routes/reliable-path", () => {
 
 
 
+
+
+// The reliability algorithm assumes edge success events are independent. Its greedy property follows because maximizing the product of probabilities in \([0,1]\) is equivalent to minimizing the sum of negative logarithms for positive probabilities. The implementation directly multiplies probabilities, which is straightforward for this learning project; very long paths may need log-space calculations to avoid floating-point underflow.
+
+
+
