@@ -204,5 +204,12 @@ module.exports = { MaxHeap, findReliablePath };
 // }
 
 
+// The A → C → D route has reliability \(0.95 \times 0.8 = 0.76\), so A → B → D is the more reliable route.
+
+// Complexity: \(O((V+E)\log V)\) time for a sparse graph using a binary heap, with \(O(V+E)\) space.
+
+
+
+
 
 
