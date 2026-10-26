@@ -66,5 +66,7 @@ module.exports = app;
 
 
 
+// Your src/server.js should start the server and initialize the database connections using your existing setup. Keep app.js separate from server.js so Supertest can import the app without opening a network port.
+
 
 
