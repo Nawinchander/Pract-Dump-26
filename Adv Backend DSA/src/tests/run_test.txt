@@ -23,7 +23,9 @@ npx jest tests/integration/advanced-dsa.integration.test.js --runInBand
 npm run test:coverage
 
 
+The commands above use shell-style line continuation for readability; if you run them in Windows Command Prompt, put each command on one line or use ^ for line continuation.
 
+Before running the tests, ensure that each controller and service has one consolidated module.exports object containing all its existing functions and the new functions. Repeated module.exports = ... assignments overwrite earlier exports and can break the original six APIs.
 
 
 
