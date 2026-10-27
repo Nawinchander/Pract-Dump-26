@@ -1,6 +1,28 @@
 //// npm run Terminal
 
 
+# Run every test
+npm test
+
+# Run only the four new algorithm tests
+npx jest tests/unit/unionFind.test.js \
+  tests/unit/taskExecutionOrder.test.js \
+  tests/unit/resourceAllocator.test.js \
+  tests/unit/reliablePath.test.js --runInBand
+
+# Run the four new API tests
+npx jest tests/api/connectivity.api.test.js \
+  tests/api/execution-order.api.test.js \
+  tests/api/resource-allocation.api.test.js \
+  tests/api/reliable-path.api.test.js --runInBand
+
+# Run the integration tests
+npx jest tests/integration/advanced-dsa.integration.test.js --runInBand
+
+# Generate coverage
+npm run test:coverage
+
+
 
 
 
