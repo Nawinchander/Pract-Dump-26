@@ -35,5 +35,8 @@ function errorMiddleware(err, req, res, next) {
 module.exports = errorMiddleware;
 
 
+// This is a simple development-oriented example. For production, use explicit validation errors or custom error classes instead of classifying errors by their message text.
+
+
 
 
