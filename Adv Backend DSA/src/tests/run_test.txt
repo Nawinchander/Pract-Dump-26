@@ -43,3 +43,6 @@ Before running the tests, ensure that each controller and service has one consol
 
 
 
+The two databases still have their existing roles: MySQL for structured entities such as tasks, projects and route-search history; MongoDB for flexible traffic snapshots, graph metadata and other dynamic documents. The four new algorithms above operate in memory, so they do not require database schema changes unless you also want to persist their results.
+
+Recommended next step: implement and test APIs 7–10 first, then add request validation and database persistence, followed by end-to-end and performance testing. This gives you a portfolio project with ten algorithm-driven endpoints and a clear separation between DSA logic, service logic, HTTP handling and persistence.
