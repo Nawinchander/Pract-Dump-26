@@ -28,5 +28,18 @@ The commands above use shell-style line continuation for readability; if you run
 Before running the tests, ensure that each controller and service has one consolidated module.exports object containing all its existing functions and the new functions. Repeated module.exports = ... assignments overwrite earlier exports and can break the original six APIs.
 
 
+10. Final list of all 10 APIs
+#	Endpoint	Algorithm
+1	POST /api/routes/shortest	Dijkstra + Min Heap
+2	POST /api/scheduler/critical-path	Critical Path + Topological Sort
+3	POST /api/routes/alternatives	K-Shortest Paths
+4	POST /api/scheduler/dependency-impact	Breadth-First Search
+5	POST /api/routes/network-analysis	Floyd–Warshall
+6	POST /api/scheduler/task-priority	Max Heap
+7	POST /api/routes/connectivity	Union-Find / DSU
+8	POST /api/scheduler/execution-order	Kahn’s Algorithm
+9	POST /api/scheduler/resource-allocation	Greedy + Min Heap
+10	POST /api/routes/reliable-path	Maximum-reliability path
+
 
 
