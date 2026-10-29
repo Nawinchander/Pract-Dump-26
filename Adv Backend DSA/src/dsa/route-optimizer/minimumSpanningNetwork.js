@@ -95,6 +95,13 @@ function minimumSpanningNetwork(nodes, edges) {
 module.exports = { minimumSpanningNetwork };
 
 
+// How it works:
+// 1. Sort all edges by increasing cost.
+// 2. Select the cheapest edge that doesn't create a cycle.
+// 3. Repeat until all nodes are connected or no more edges can be selected.
+// 4. Return the selected edges, total cost, and connectivity status.
+// For a graph with \(V\) vertices and \(E\) edges, the time complexity is \(O(E\log E)\), dominated by sorting.
+
 
 
 
