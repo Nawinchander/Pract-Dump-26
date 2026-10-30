@@ -1,3 +1,11 @@
+// API 11 — Minimum Spanning Network
+// Objective
+// Imagine a logistics company needs to connect several warehouses. Every possible connection has a cost. The objective is to connect all warehouses while minimizing the total cost.
+
+// We'll use Kruskal's algorithm, which sorts edges by cost and selects an edge only when it doesn't create a cycle.
+
+
+
 function minimumSpanningNetwork(nodes, edges) {
   if (!Array.isArray(nodes) || !Array.isArray(edges)) {
     throw new Error("nodes and edges must be arrays");
