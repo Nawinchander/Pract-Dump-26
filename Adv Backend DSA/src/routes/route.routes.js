@@ -26,6 +26,13 @@ const { reliablePath } = require("../controllers/route.controller");
 router.post("/reliable-path", reliablePath);
 
 
+const { minimumSpanningNetworkController } = require("../controllers/route.controller");
+
+
+
+
+
+
 // {
 //     "nodes": [
 //         "A",
