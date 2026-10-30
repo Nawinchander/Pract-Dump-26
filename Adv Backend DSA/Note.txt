@@ -33,5 +33,15 @@ Performance/load testing
 
 
 
+Your Advanced DSA Backend currently has 10 APIs covering graph algorithms, route optimization, dependency scheduling, and resource allocation. Let's extend it to 12 APIs by adding two more practical endpoints, including the JavaScript implementation, file structure, Express routes, and automated tests.
+
+The new APIs will be:
+
+API	Algorithm	Practical use
+11. Minimum Spanning Network	Kruskal’s Algorithm + Union-Find	Connect all locations with minimum total connection cost
+
+12. Task Deadline Analyzer	Greedy Scheduling + Sorting	Schedule tasks to maximize the number completed before their deadlines
+
+
 
 
