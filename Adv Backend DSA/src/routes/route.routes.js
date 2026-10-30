@@ -31,7 +31,17 @@ const { minimumSpanningNetworkController } = require("../controllers/route.contr
 router.post( "/minimum-spanning-network", minimumSpanningNetworkController );
 
 
-
+// minimumSpanningNetworkController
+// {
+//   "nodes": ["A", "B", "C", "D"],
+//   "edges": [
+//     { "source": "A", "destination": "B", "weight": 4 },
+//     { "source": "A", "destination": "C", "weight": 3 },
+//     { "source": "B", "destination": "C", "weight": 1 },
+//     { "source": "B", "destination": "D", "weight": 2 },
+//     { "source": "C", "destination": "D", "weight": 5 }
+//   ]
+// }
 
 // {
 //     "nodes": [
