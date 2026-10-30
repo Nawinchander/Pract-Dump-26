@@ -32,6 +32,25 @@ async function reliablePath(req, res, next) {
   }
 }
 
+async function minimumSpanningNetworkController(req, res, next) {
+  try {
+    const data = await routeService.buildMinimumSpanningNetwork(
+      req.body
+    );
+
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+
+// Make sure routeService is imported from your existing route.service.js. Append minimumSpanningNetworkController to the controller's existing exports.
+
+
 // Add reliablePath to the existing controller exports.
 
 
