@@ -44,4 +44,56 @@ API	Algorithm	Practical use
 
 
 
+1. Updated folder and file structure
+Add these files to your existing advanced-dsa-backend project. Keep the previous 10 APIs and their files unchanged.
+
+
+
+
+advanced-dsa-backend/
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── dsa/
+│   │   ├── route-optimizer/
+│   │   │   ├── Graph.js
+│   │   │   ├── PriorityQueue.js
+│   │   │   ├── dijkstra.js
+│   │   │   ├── kShortestPaths.js
+│   │   │   ├── floydWarshall.js
+│   │   │   ├── unionFind.js
+│   │   │   ├── reliablePath.js
+│   │   │   └── minimumSpanningNetwork.js       NEW
+│   │   └── dependency-scheduler/
+│   │       ├── topologicalSort.js
+│   │       ├── criticalPath.js
+│   │       ├── dependencyAnalysis.js
+│   │       ├── taskPriorityQueue.js
+│   │       ├── taskExecutionOrder.js
+│   │       ├── resourceAllocator.js
+│   │       └── deadlineAnalyzer.js             NEW
+│   ├── services/
+│   │   ├── route.service.js
+│   │   └── scheduler.service.js
+│   ├── controllers/
+│   │   ├── route.controller.js
+│   │   └── scheduler.controller.js
+│   ├── routes/
+│   │   ├── route.routes.js
+│   │   └── scheduler.routes.js
+│   └── middleware/
+│       └── error.middleware.js
+├── tests/
+│   ├── unit/
+│   │   ├── minimumSpanningNetwork.test.js      NEW
+│   │   └── deadlineAnalyzer.test.js            NEW
+│   └── api/
+│       ├── minimum-spanning-network.api.test.js NEW
+│       └── deadline-analyzer.api.test.js        NEW
+├── package.json
+└── .env
+
+
+
+
 
