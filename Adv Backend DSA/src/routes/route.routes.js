@@ -43,6 +43,25 @@ router.post( "/minimum-spanning-network", minimumSpanningNetworkController );
 //   ]
 // }
 
+
+/// expected response
+
+// {
+//   "success": true,
+//   "data": {
+//     "edges": [
+//       { "source": "B", "destination": "C", "weight": 1 },
+//       { "source": "B", "destination": "D", "weight": 2 },
+//       { "source": "A", "destination": "C", "weight": 3 }
+//     ],
+//     "totalCost": 6,
+//     "connected": true
+//   }
+// }
+
+  
+
+
 // {
 //     "nodes": [
 //         "A",
