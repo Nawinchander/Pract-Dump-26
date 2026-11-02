@@ -1,43 +1,29 @@
 // /// 24
 
-const schedulerService =
-  require("../services/scheduler.service");
+const schedulerService = require("../services/scheduler.service");
 
 async function executionOrder(req, res, next) {
   try {
-    const data =
-      await schedulerService.calculateExecutionOrder(req.body);
+    const data = await schedulerService.calculateExecutionOrder(req.body);
 
     res.status(200).json({
-      success: true,
-      data
-    });
+      success: true, data });
   } catch (error) {
     next(error);
   }
 }
 
 // Add executionOrder to your existing controller exports.
-module.exports = {
+module.exports = {executionOrder };
   // Preserve existing exports here.
-  executionOrder
-};
 
-const {
-    prioritizeTasks
-} = require("../services/scheduler.service");
+const { prioritizeTasks } = require("../services/scheduler.service");
 
-async function taskPriority(
-    req,
-    res,
-    next
-) {
+async function taskPriority( req, res, next) {
     try {
 
-        const result =
-            await prioritizeTasks(
-                req.body.tasks
-            );
+        const result = await prioritizeTasks(
+                req.body.tasks );
 
         res.status(200).json({
             success: true,
@@ -51,22 +37,11 @@ async function taskPriority(
     }
 }
 
-const {
-    analyzeDependencyImpact
-} = require("../services/scheduler.service");
+const { analyzeDependencyImpact } = require("../services/scheduler.service");
 
-async function dependencyImpact(
-    req,
-    res,
-    next
-) {
+async function dependencyImpact( req, res, next) {
     try {
-
-        const result =
-            await analyzeDependencyImpact(
-                req.body
-            );
-
+        const result = await analyzeDependencyImpact(req.body);
         res.status(200).json({
             success: true,
             data: result
@@ -77,10 +52,10 @@ async function dependencyImpact(
     }
 }
 
-module.exports = {
-    schedule,
-    dependencyImpact
-};
+module.exports = { schedule, dependencyImpact };
+
+
+
 
 
 // const {
