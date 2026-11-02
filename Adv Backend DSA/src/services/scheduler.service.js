@@ -13,6 +13,7 @@ async function calculateExecutionOrder(data) {
 
 // Add calculateExecutionOrder to the existing module.exports.
 
+const { analyzeDeadlines } = require("../dsa/dependency-scheduler/deadlineAnalyzer");
 
 
 // const TaskPriorityQueue =
