@@ -15,6 +15,10 @@ async function calculateExecutionOrder(data) {
 
 const { analyzeDeadlines } = require("../dsa/dependency-scheduler/deadlineAnalyzer");
 
+async function analyzeTaskDeadlines(data) {
+  return analyzeDeadlines(data.tasks);
+}
+
 
 // const TaskPriorityQueue =
 //     require(
