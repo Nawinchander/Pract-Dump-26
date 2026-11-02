@@ -13,5 +13,12 @@ This is useful for deadline-driven task planning, project management, and schedu
 Endpoint: POST /api/scheduler/deadline-analysis
 
 
+Important: This algorithm assumes tasks are independent, have fixed durations, and can be completed in any order. It does not account for task dependencies or multiple workers.
+
+Complexity: \(O(N\log N)\) time and \(O(N)\) space.
+
+
+
+
 
 

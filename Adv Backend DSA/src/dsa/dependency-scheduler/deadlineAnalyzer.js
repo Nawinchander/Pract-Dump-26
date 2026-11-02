@@ -99,7 +99,7 @@ function analyzeDeadlines(tasks) {
 
   const sortedTasks = [...tasks].sort(
     (a, b) => a.deadline - b.deadline
-g  );
+ );
 
   let totalDuration = 0;
 
