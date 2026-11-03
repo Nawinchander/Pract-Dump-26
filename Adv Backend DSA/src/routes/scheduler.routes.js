@@ -54,6 +54,47 @@ module.exports = router;
 // }
 
 
+/// expected response
+
+// {
+//   "success": true,
+//   "data": {
+//     "totalTasks": 4,
+//     "completedTasks": 3,
+//     "skippedTasks": 1,
+//     "totalDuration": 6,
+//     "schedule": [
+//       {
+//         "id": "TASK-D",
+//         "duration": 1,
+//         "deadline": 2,
+//         "start": 0,
+//         "finish": 1,
+//         "meetsDeadline": true
+//       },
+//       {
+//         "id": "TASK-B",
+//         "duration": 2,
+//         "deadline": 3,
+//         "start": 1,
+//         "finish": 3,
+//         "meetsDeadline": true
+//       },
+//       {
+//         "id": "TASK-C",
+//         "duration": 3,
+//         "deadline": 6,
+//         "start": 3,
+//         "finish": 6,
+//         "meetsDeadline": true
+//       }
+//     ],
+//     "skippedTaskIds": ["TASK-A"]
+//   }
+// }
+
+
+
 
 
 
