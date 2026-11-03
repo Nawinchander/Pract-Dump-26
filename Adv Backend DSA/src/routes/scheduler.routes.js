@@ -41,8 +41,21 @@ router.post("/deadline-analysis", deadlineAnalysis);
 
 module.exports = router;
 
-
+/// POST /api/scheduler/deadline-analysis
 //// POST /api/scheduler/task-priority
+
+// {
+//   "tasks": [
+//     { "id": "TASK-A", "duration": 4, "deadline": 5 },
+//     { "id": "TASK-B", "duration": 2, "deadline": 3 },
+//     { "id": "TASK-C", "duration": 3, "deadline": 6 },
+//     { "id": "TASK-D", "duration": 1, "deadline": 2 }
+//   ]
+// }
+
+
+
+
 
 
 
