@@ -17,9 +17,7 @@
 
 const express = require("express");
 
-const {
-    schedule,
-    dependencyImpact} = require("../controllers/scheduler.controller");
+const {schedule,dependencyImpact} = require("../controllers/scheduler.controller");
 
 const router = express.Router();
 
@@ -28,25 +26,13 @@ router.post(
     schedule
 );
 
-router.post(
-    "/dependency-impact",
-    dependencyImpact
-);
+router.post("/dependency-impact",dependencyImpact);
 
-router.post(
-    "/critical-path",
-    schedule
-);
+router.post("/critical-path",schedule);
 
-router.post(
-    "/dependency-impact",
-    dependencyImpact
-);
+router.post("/dependency-impact",dependencyImpact);
 
-router.post(
-    "/task-priority",
-    taskPriority
-);
+router.post("/task-priority",taskPriority);
 
 const {executionOrder} = require("../controllers/scheduler.controller");
 
@@ -56,4 +42,9 @@ module.exports = router;
 
 
 //// POST /api/scheduler/task-priority
+
+
+
+
+
 
