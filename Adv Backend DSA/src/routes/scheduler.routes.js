@@ -21,10 +21,7 @@ const {schedule,dependencyImpact} = require("../controllers/scheduler.controller
 
 const router = express.Router();
 
-router.post(
-    "/critical-path",
-    schedule
-);
+router.post("/critical-path",schedule);
 
 router.post("/dependency-impact",dependencyImpact);
 
