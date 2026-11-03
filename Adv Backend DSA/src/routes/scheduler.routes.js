@@ -35,6 +35,10 @@ const {executionOrder} = require("../controllers/scheduler.controller");
 
 router.post("/execution-order", executionOrder);
 
+const {deadlineAnalysis} = require("../controllers/scheduler.controller");
+
+router.post("/deadline-analysis", deadlineAnalysis);
+
 module.exports = router;
 
 
