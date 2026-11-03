@@ -19,10 +19,7 @@ const express = require("express");
 
 const {
     schedule,
-    dependencyImpact
-} = require(
-    "../controllers/scheduler.controller"
-);
+    dependencyImpact} = require("../controllers/scheduler.controller");
 
 const router = express.Router();
 

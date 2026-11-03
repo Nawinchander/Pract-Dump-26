@@ -55,7 +55,24 @@ async function dependencyImpact( req, res, next) {
 module.exports = { schedule, dependencyImpact };
 
 
+async function deadlineAnalysis(req, res, next) {
+  try {
+    const data = await schedulerService.analyzeTaskDeadlines(
+      req.body
+    );
 
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    next(error);
+  }
+}
+
+// Make sure schedulerService is already imported. Append deadlineAnalysis to your existing controller exports.
+
+/// 4. register route
 
 
 // const {
