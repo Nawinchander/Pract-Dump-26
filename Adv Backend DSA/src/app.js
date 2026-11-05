@@ -73,3 +73,10 @@ module.exports = app;
 
 
 
+// Also confirm that your existing route.controller.js, scheduler.controller.js, route.service.js, and scheduler.service.js export all their previous functions along with the newly added functions.
+
+// Important: Do not create multiple module.exports assignments in the same file. Add each new function to the existing export object.
+
+
+
+
