@@ -58,6 +58,9 @@ app.get("/health", (req, res) => {
 
 app.use("/api/routes", routeRoutes);
 app.use("/api/scheduler", schedulerRoutes);
+app.use("/api/routes", routeRoutes);
+app.use("/api/scheduler", schedulerRoutes);
+
 
 // Error middleware must be registered after all routes.
 app.use(errorMiddleware);
