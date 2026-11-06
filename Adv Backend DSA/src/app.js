@@ -78,5 +78,31 @@ module.exports = app;
 // Important: Do not create multiple module.exports assignments in the same file. Add each new function to the existing export object.
 
 
+// Run the new tests
+// Make sure you have Jest and Supertest installed:
+
+// npm install --save-dev jest supertest
+
+// Run the two new unit tests:
+
+// npx jest tests/unit/minimumSpanningNetwork.test.js tests/unit/deadlineAnalyzer.test.js --runInBand
+
+// Run the two API tests:
+
+// npx jest tests/api/minimum-spanning-network.api.test.js tests/api/deadline-analyzer.api.test.js --runInBand
+
+// Run the complete existing test suite:
+
+// npm test
+
+// Generate test coverage:
+
+// npm run test:coverage
+
+
+
+
+
+
 
 
