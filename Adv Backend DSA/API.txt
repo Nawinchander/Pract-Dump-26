@@ -106,5 +106,22 @@ One final distinction: these additions provide the algorithm implementations and
 
 
 
+| # | API endpoint | Algorithm |
+|---:|---|---|
+| 1 | `POST /api/routes/shortest` | Dijkstra + Min Heap |
+| 2 | `POST /api/scheduler/critical-path` | Critical Path + Topological Sort |
+| 3 | `POST /api/routes/alternatives` | K-Shortest Paths |
+| 4 | `POST /api/scheduler/dependency-impact` | BFS |
+| 5 | `POST /api/routes/network-analysis` | Floyd–Warshall |
+| 6 | `POST /api/scheduler/task-priority` | Max Heap |
+| 7 | `POST /api/routes/connectivity` | Union-Find |
+| 8 | `POST /api/scheduler/execution-order` | Kahn's Algorithm |
+| 9 | `POST /api/scheduler/resource-allocation` | Greedy + Min Heap |
+| 10 | `POST /api/routes/reliable-path` | Maximum-reliability path |
+| 11 | `POST /api/routes/minimum-spanning-network` | Kruskal's Algorithm |
+| 12 | `POST /api/scheduler/deadline-analysis` | Greedy Scheduling + Max Heap |
+
+
+
 
 
