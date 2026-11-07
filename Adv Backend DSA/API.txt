@@ -59,4 +59,38 @@ API structure
 
 
 
+                 CLIENT
+          React / Vue / Postman
+                    |
+                    v
+              EXPRESS.JS
+             REST API Layer
+                    |
+          +---------+---------+
+          |                   |
+          v                   v
+     ROUTE MODULE        SCHEDULER MODULE
+          |                   |
+    Graph Algorithms     Scheduling Algorithms
+          |                   |
+          +---------+---------+
+                    |
+                    v
+             SERVICE LAYER
+                    |
+                    v
+            REPOSITORY LAYER
+                    |
+             +------+------+
+             |             |
+             v             v
+           MySQL         MongoDB
+             |
+             v
+        Testable Backend
+             |
+      +------+------+------+
+      |             |      |
+    Unit          API   Integration
+    Tests         Tests    Tests
 
