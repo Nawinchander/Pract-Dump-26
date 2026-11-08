@@ -128,6 +128,6 @@ What this project demonstrates
 - Backend development: Express routing, controllers, services, error handling, and REST API design.
 - Databases: MySQL and MongoDB integration.
 - Testing: Unit tests, API tests, integration tests, and your existing end-to-end and performance-testing structure.
-One final distinction: these additions provide the algorithm implementations and automated test files, but they are not a fully verified production build of the entire repository. Run the full test suite after merging them to identify any conflicts with your existing imports, exports, or error middleware.
+One final distinction: these additions provide the algorithm implementations and automated test files, but they are not a fully verified production build of the entire repository. Run the full test suite after merging them to identify any conflicts with your existing imports, exports, or error middleware. 
 
 
