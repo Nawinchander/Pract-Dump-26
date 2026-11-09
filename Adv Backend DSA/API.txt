@@ -134,12 +134,11 @@ What this project demonstrates
 One final distinction: these additions provide the algorithm implementations and automated test files, but they are not a fully verified production build of the entire repository. Run the full test suite after merging them to identify any conflicts with your existing imports, exports, or error middleware. 
 
 
+MySQL and MongoDB remain part of the overall architecture. The two new algorithms execute in memory and do not require database changes unless you decide to store their results.
+What this project demonstrates
+- DSA: Graph traversal, shortest paths, heaps, greedy algorithms, Union-Find, and topological sorting.
 
-
-
-
-
-
+- Backend development: Express routing, controllers, services, error handling, and REST API design.
 
 
 - Databases: MySQL and MongoDB integration.
