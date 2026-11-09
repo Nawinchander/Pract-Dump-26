@@ -140,7 +140,6 @@ What this project demonstrates
 
 - Backend development: Express routing, controllers, services, error handling, and REST API design.
 
-
 - Databases: MySQL and MongoDB integration.
 
 - Testing: Unit tests, API tests, integration tests, and your existing end-to-end and performance-testing structure.
