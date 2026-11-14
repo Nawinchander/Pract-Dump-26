@@ -66,17 +66,6 @@ Phase 7 — Production improvements
 46. AWS deployment
 
 
-Phase 7 — Production improvements
-39. Validation
-40. Authe ntication
-41. Rate limiting
-42. Logging
-43. Redis caching
-44. Docker
-45. CI/CD
-46. AWS deployment
-
-
 Final project
 
 You now have a single project that demonstrates:
