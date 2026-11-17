@@ -11,6 +11,22 @@ Phase 1 — Project setup
 4. Create .env
 5. Configure Express
 
+
+
+Recommended implementation order
+
+Don't try to build everything simultaneously.
+
+Follow this exact sequence:
+
+Phase 1 — Project setup
+1. npm init
+2. Install dependencies
+3. Create folders
+4. Create .env
+5. Configure Express
+
+
 Phase 2 — Databases
 6. Install/start MySQL
 7. Create database
