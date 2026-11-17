@@ -12,6 +12,13 @@ Phase 1 — Project setup
 5. Configure Express
 
 
+Phase 2 — Databases
+6. Install/start MySQL
+7. Create database
+8. Create tables
+9. Connect mysql2
+10. Install/start MongoDB
+11. Connect Mongoose
 
 Recommended implementation order
 
@@ -34,6 +41,7 @@ Phase 2 — Databases
 9. Connect mysql2
 10. Install/start MongoDB
 11. Connect Mongoose
+
 
 Phase 3 — Dijkstra
 12. Implement PriorityQueue
