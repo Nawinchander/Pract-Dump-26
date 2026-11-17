@@ -28,6 +28,24 @@ Phase 3 — Dijkstra
 15. Implement Dijkstra
 16. Test Dijkstra
 
+Phase 2 — Databases
+6. Install/start MySQL
+7. Create database
+8. Create tables
+9. Connect mysql2
+10. Install/start MongoDB
+11. Connect Mongoose
+
+
+Phase 3 — Dijkstra
+12. Implement PriorityQueue
+13. Test PriorityQueue
+14. Implement Graph
+15. Implement Dijkstra
+16. Test Dijkstra
+
+
+
 Phase 4 — Route API
 17. Repository
 18. Service
