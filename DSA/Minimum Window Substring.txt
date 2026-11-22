@@ -15,6 +15,12 @@
 // "BANC"
 
 
+// Find the smallest substring of s containing all characters of t.
+
+// Answer
+// "BANC"
+
+
 
 // Core Idea
 
