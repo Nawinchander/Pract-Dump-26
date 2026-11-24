@@ -69,19 +69,4 @@ DFS/backtracking
 
 
 
-Why this is difficult
-
-A normal Word Ladder is just BFS.
-
-Here we need:
-
-BFS
- ↓
-find shortest distance
- ↓
-preserve ALL shortest paths
- ↓
-DFS/backtracking
-
-
 
