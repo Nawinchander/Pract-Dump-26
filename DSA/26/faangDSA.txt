@@ -17,22 +17,6 @@ Focus: Graphs, DP, Heaps, Sliding Window, Backtracking, Advanced Trees
 
 
 
-Focus: Graphs, DP, Heaps, Sliding Window, Backtracking, Advanced Trees
-
-#	Topic	Complex Problem	Main Pattern
-1	Graph	Word Ladder II	BFS + Backtracking
-2	Graph	Alien Dictionary	Topological Sort
-3	Graph	Cheapest Flights Within K Stops	Bellman-Ford / DP
-4	Heap	Sliding Window Median	Two Heaps
-5	DP	Longest Increasing Subsequence	Binary Search + DP
-6	DP	Edit Distance	2D DP
-7	Tree	Serialize & Deserialize Binary Tree	DFS
-8	Graph	Network Delay Time	Dijkstra
-9	Backtracking	N-Queens	Backtracking + Sets
-10	Graph	Number of Islands II	Union Find
-
-
-
 LEVEL 1 — Problem 1
 🔥 Word Ladder II
 Problem
@@ -83,6 +67,21 @@ preserve ALL shortest paths
  ↓
 DFS/backtracking
 
+
+
+Why this is difficult
+
+A normal Word Ladder is just BFS.
+
+Here we need:
+
+BFS
+ ↓
+find shortest distance
+ ↓
+preserve ALL shortest paths
+ ↓
+DFS/backtracking
 
 
 
