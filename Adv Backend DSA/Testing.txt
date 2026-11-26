@@ -78,4 +78,26 @@ throughput
 
 
 
+4. Database testing
+
+
+Tests:
+
+MySQL
+MongoDB
+CRUD
+constraints
+5. End-to-end testing
+
+Tests the entire workflow.
+
+6. Performance testing
+
+Tests:
+
+requests/second
+latency
+throughput
+
+
 
